@@ -21,7 +21,7 @@ Los usuarios van a poder consultar, realizar pedidos y ver el catálogo de nuest
  + [Quixel](https://quixel.com/megascans) Tiene una buena biblioteca sobre distintios tipos de materiales
  + [Poliigon](https://www.poliigon.com/) Parecido a la anterior pero con una mejor estética
  + [Mercado Libre](https://www.mercadolibre.com.ar/) Líder de e-commerce en Argentina
- + 
+ + [Urbania Shop](https://urbaniasa.com/shop/?gclid=CjwKCAjw682TBhATEiwA9crl3-kKcdI4lnegesSTVCmPA4db20n6RMhL5YFa2VhA9qlzJK3qSgwr7hoCidEQAvD_BwE) Empresa donde trabaja Fede
  + 
  
  

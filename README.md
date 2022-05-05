@@ -1,6 +1,6 @@
 # Grupo 2 
 ## Integrantes
-+ Federico Ali
++ Federico Ali': Venta de materialees de construccion.  24años 
 + Mariana Garcia Costoya
 + Tomas Belardo: Arquitecto y diseñador 3d. 30 años. 
 + Rodrigo Basavilbaso: Economista y programador. 30 años.

@@ -15,3 +15,14 @@
 
 El sitio apunta a captar la demanda de materiales de construcción para aquellas personas que buscan realizar su primer hogar. En nuestro sitio van a poder tener una experiencia clara sobre los materiales que ofrecemos y un experiencia concreta en las texturas de los mismos y previsualizar como conviven entre sí.
 Los usuarios van a poder consultar, realizar pedidos y ver el catálogo de nuestros productos de una manera simple.
+
+
+ ### Inspiración en referentes del mercado
+ + [Quixel](https://quixel.com/megascans) Tiene una buena biblioteca sobre distintios tipos de materiales
+ + [Poliigon](https://www.poliigon.com/) Parecido a la anterior pero con una mejor estética
+ + [Mercado Libre](https://www.mercadolibre.com.ar/) Líder de e-commerce en Argentina
+ + 
+ + 
+ 
+ 
+ 

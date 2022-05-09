@@ -10,19 +10,19 @@
 
 
 
-# Construimos
-## Venta de insumos para que construyas la casa de tus sueños
+# JAVA CAFE
+## Venta de cafeteras e insumos relacionados al cafe.
 
-El sitio apunta a captar la demanda de materiales de construcción para aquellas personas que buscan realizar su primer hogar. En nuestro sitio van a poder tener una experiencia clara sobre los materiales que ofrecemos y un experiencia concreta en las texturas de los mismos y previsualizar como conviven entre sí.
-Los usuarios van a poder consultar, realizar pedidos y ver el catálogo de nuestros productos de una manera simple.
+El sitio apunta a crear un publico de tomadores de cafe. El e-commerce estará organizado principalmente a maquinas de cafe, pero tambien a los inusmos como capsulas, sobres de cafe molido, tazas, etc. Se podrán hacer compras de la forma tradicional pero tambien el sitio va a contar con un sistema de suscripcion/membresia que otorgara creditos cada mes a los usuarios para que puedan comprar productos o obtener beneficios. De esta forma el sitio funcionara como una especie de club de cafe, abierto tanto para los compradores de una sola ocasión como los compradores recurrentes. 
 
 
  ### Inspiración en referentes del mercado
- + [Quixel](https://quixel.com/megascans) Tiene una buena biblioteca sobre distintios tipos de materiales
- + [Poliigon](https://www.poliigon.com/) Parecido a la anterior pero con una mejor estética
+ + [Nespresso](https://www.nespresso.com/ar/?gclid=Cj0KCQjw1N2TBhCOARIsAGVHQc7Gbt5oRbZbD0FXgrLjR79xeydg_rN0uexHieKRl5tRfLzOTkSiEx8aAqvUEALw_wcB&gclsrc=aw.ds) Lider en el mercado de cafeteras de capsula
+ + [rave coffee](https://ravecoffee.co.uk/) venta de cafes, sistema de suscripcion
  + [Mercado Libre](https://www.mercadolibre.com.ar/) Líder de e-commerce en Argentina
- + [Urbania Shop](https://urbaniasa.com/shop/?gclid=CjwKCAjw682TBhATEiwA9crl3-kKcdI4lnegesSTVCmPA4db20n6RMhL5YFa2VhA9qlzJK3qSgwr7hoCidEQAvD_BwE) Empresa donde trabaja Fede
- + 
+ + [ion](https://exp-ion.lusion.co/) Nos gustó la estética y el uso de la librería three-js que permite importar modelos 3d.
+ + [TAG] (https://www.tagheuer.com/fr/en/smartwatches/collection-connected.html) nos gustaron algunas cosas de diseño del sitio.
+ 
  
  
  

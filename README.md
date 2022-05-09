@@ -21,7 +21,7 @@ El sitio apunta a crear un publico de tomadores de cafe. El e-commerce estará o
  + [rave coffee](https://ravecoffee.co.uk/) venta de cafes, sistema de suscripcion
  + [Mercado Libre](https://www.mercadolibre.com.ar/) Líder de e-commerce en Argentina
  + [ion](https://exp-ion.lusion.co/) Nos gustó la estética y el uso de la librería three-js que permite importar modelos 3d.
- + [TAG] (https://www.tagheuer.com/fr/en/smartwatches/collection-connected.html/) nos gustaron algunas cosas de diseño del sitio.
+ + [TAG](https://www.tagheuer.com/fr/en/smartwatches/collection-connected.html/) nos gustaron algunas cosas de diseño del sitio.
  
  
  

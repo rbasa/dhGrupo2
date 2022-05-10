@@ -22,6 +22,8 @@ El sitio apunta a crear un publico de tomadores de cafe. El e-commerce estará o
  + [Mercado Libre](https://www.mercadolibre.com.ar/) Líder de e-commerce en Argentina
  + [ion](https://exp-ion.lusion.co/) Nos gustó la estética y el uso de la librería three-js que permite importar modelos 3d.
  + [TAG](https://www.tagheuer.com/fr/en/smartwatches/collection-connected.html/) nos gustaron algunas cosas de diseño del sitio.
+ + [bodum](https://www.bodum.com/gb/en/) 
+ + [SMEHG](https://www.smeg.com/sda-espresso-coffee-machines)
  
  
  

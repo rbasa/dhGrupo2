@@ -26,6 +26,7 @@ El sitio apunta a crear un publico de tomadores de cafe. El e-commerce estará o
  + [SMEG](https://www.smeg.com/sda-espresso-coffee-machines)
  + [BOLD](https://boldcapitalpartners.com/)
  + [moheim](https://moheim.com/)
+ + [koox](http://koox.co.uk/)
  
  
  

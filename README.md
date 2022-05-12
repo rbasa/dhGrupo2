@@ -27,6 +27,10 @@ El sitio apunta a crear un publico de tomadores de cafe. El e-commerce estará o
  + [BOLD](https://boldcapitalpartners.com/)
  + [moheim](https://moheim.com/)
  + [koox](http://koox.co.uk/)
+
+## link a Trello
+https://trello.com/b/YfcpNUjP/sprint-2
+
  
  
  

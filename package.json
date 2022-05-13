@@ -1,0 +1,22 @@
+{
+  "name": "cafe_java",
+  "version": "1.0.0",
+  "description": "+ Federico Ali: Venta de materiales de construccion.  24años  + Mariana Garcia Costoya: empleada en atencion al publico. 26 años. + Tomas Belardo: Arquitecto y diseñador 3d. 30 años.  + Rodrigo Basavilbaso: Economista y programador. 30 años.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbasa/grupo_2_javaCafe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rbasa/grupo_2_javaCafe/issues"
+  },
+  "homepage": "https://github.com/rbasa/grupo_2_javaCafe#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

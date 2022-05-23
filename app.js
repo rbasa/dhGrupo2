@@ -11,3 +11,12 @@ app.listen(PORT, ()=>{
 app.get("/",(req,res)=>{
     res.sendFile(__dirname+"/views/home.html")
 });
+app.get("/login",(req,res)=>{
+    res.sendFile(__dirname+"/views/login.html")
+});
+app.get("/register",(req,res)=>{
+    res.sendFile(__dirname+"/views/register.html")
+});
+app.get("/products",(req,res)=>{
+    res.sendFile(__dirname+"/views/products.html")
+});

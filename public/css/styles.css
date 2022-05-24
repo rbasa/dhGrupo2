@@ -5,12 +5,24 @@
     box-sizing: border-box;
 }
 
+main section div.form-container form{
+  padding-top: 5%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main section div.form-container form div{
+  width: 100%;
+  color: rgb(241, 115, 4);
+  padding-bottom: 2%;
+  font-size: 1.5rem;
+}
+
 header{
   display: flex;
   background-color: rgb(241, 115, 4);
   height: 35px;
   justify-content: space-between;
-  /* margin-bottom: 10px; */
 }
 
 .logo{
@@ -114,7 +126,7 @@ h1{
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between
 }
 
 .card{
@@ -263,7 +275,13 @@ h1{
     width: 50%;
     display: block;
   }
-
+  main section div.form-container form div label, main section div.form-container form div input{
+    font-size: 1.6rem;
+    width: 50%;
+  }
+  main section div.form-container form div input.login-submit{
+    width: 25%;
+  }
   header{
     height: 45px;
   }
@@ -334,5 +352,11 @@ h1{
   .arrow{
     font-size: 4rem;
   }
-
+  main section div.form-container form div label, main section div.form-container form div input{
+    font-size: 2rem;
+    max-width: 495px;
+  }
+  main section div.form-container form div input.login-submit{
+    max-width: 200px;
+  }
 }

@@ -49,27 +49,223 @@ a{
 color: whitesmoke;
 }
 
+
 .banner{
-width: 100%;
+background-image: url(/images/banner.png);
+background-size: cover;
+padding-top: 200px;
+padding-bottom: 300px;
 }
 
 
-.container{
-display: grid;
-height: 340px;
-width: 200px;
+
+.main-image {
+    position: relative;
+    background: url(/images/java3.png) no-repeat center;
+    background-size: cover;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    overflow: hidden;
+}
+
+.arrow{
+margin-top: 5px;
+font-size: 2.5rem;
+}
+
+.container {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: #fff;
+    width: 80%;
+}
+
+h1{
+font-family: 'Fredoka One';
+font-size: 2.2rem;
+font-weight: 100;
+margin-bottom: 0.5rem;
+}
+
+.cen{
+font-size: 1rem;
+ font-family: 'Poppins', sans-serif;
+}
+
+.subtitulos{
+margin-top: 3%;
+margin-left: 10%;
+margin-bottom: 3%;
+font-weight: 600;
+font-size: 2rem;
+font-family: 'Poppins', sans-serif;
+
+}
+
+.club{
+
+width: 60%;
+}
+
+
+.lista{
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 2%;
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.card{
+
 border: 1px solid black;
-border-radius: 5px;
-margin: 20px;
+border-radius: 10px;
+width: 250px;
+max-width: 200px;
 
+}
+
+.title{
+margin-left: 20%;
+margin-top: 10%;
+font-size: 1rem;
+font-family: 'Poppins', sans-serif;
+}
+
+.img{
+margin-left: 10%;
+width: 75%;
+}
+
+.imgcart{
+width: 85%;
+margin-left: 5%;
+margin-top: 5%;
 }
 
 
 
 
+.imgcont{
+width: 20%;
+border: 1px solid black;
+border-radius: 10px;
+margin-left: 2%;
+margin-top: 2%;
+margin-bottom: 2%;
+}
+.containerproducto{
+display: flex;
+margin: 1rem;
+}
 
+.cart-titles{
+font-family: 'Fredoka One';
+font-size: 1.5rem;
+margin: 2%;
+}
 
-@media(max-width: 350px){
+.cart-prices{
+font-family: 'Poppins', sans-serif;
+font-size:1.5rem;
+margin-top: 10%;
+font-weight: bold;
+}
+
+.cart-text{
+margin: 2%;
+width: 75%;
+}
+
+.close{
+margin-top:3% ;
+width: 10%;
+}
+
+.main{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 5%;
+margin-bottom: 5%;
+display: flex;
+align-items: center;
+background-color: rgb(223, 101, 0);
+}
+.description {
+margin-left: 20%;
+margin-bottom: 10%;
+font-family: 'Poppins', sans-serif;
+font-size: 0.6rem;
+}
+
+.cuerpo{
+width: 30%;
+margin-left: 4%;
+}
+
+.sub{
+font-family: 'Poppins', sans-serif;
+font-size: 0.7rem;
+}
+
+.ingresa{
+font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+margin-top: 5%;
+font-weight: bold;
+}
+
+.footer{
+background-color: black;
+padding: 5%;
+
+}
+.pop{
+font-family: 'Fredoka One';
+font-size: 1.7rem;
+font-weight: 100;
+margin-bottom: 0.5rem;
+}
+
+.backarrow{
+margin-top:auto;
+margin-bottom: auto;
+margin-left: 2rem;
+font-size: 2rem;
+align-items: center;
+
+}
+
+.cart{
+display: flex;
+justify-content: space-between;
+align-content: center;
+}
+
+.subtitulos2{
+margin-top: 3%;
+margin-left: 10%;
+margin-bottom: 3%;
+font-weight: 600;
+font-size: 1.5rem;
+font-family: 'Poppins', sans-serif;
+margin-right: 5%;
+}
+
+.containerproducto{
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+border: 1px solid black;
+border-radius: 10px;
+
+}
+
+@media(max-width: 407px){
 .logo{
 height: 35px;
 }
@@ -77,6 +273,72 @@ height: 35px;
 header{
 height: 45px;
 }
+
+h1{
+font-size: 1.2rem;
+}
+
+.cen{
+font-size: 0.7rem;
+}
+
+.container {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: #fff;
+    width: 80%;
+}
+
+.main-image {
+    padding-top: 270px;
+    padding-bottom: 10px;
+}
+
+.arrow{
+margin-top: 10px;
+font-size: 2rem;
+}
+
+
+.lista{
+grid-template-columns: repeat(auto-fill,minmax(6rem,1fr));
+}
+
+.title{
+
+font-size: 0.6rem;
+
+}
+
+.sub{
+font-family: 'Poppins', sans-serif;
+font-size: 0.5rem;
+}
+.pop{
+font-size: 1.4rem;
+}
+
+.subtitulos{
+
+font-size: 1rem;
+
+
+}
+.backarrow{
+
+margin-left: 2rem;
+font-size: 1rem;
+
+}
+
+
+
+.subtitulos2{
+font-size: 1rem;
+
+}
+
 }
 
 @media(max-width: 270px){
@@ -96,4 +358,65 @@ ul{
 width: 60px;
 }
 
+h1{
+font-size: 1rem;
 }
+
+.cen{
+font-size: 0.55rem;
+}
+
+.main-image {
+    padding-top: 200px;
+    padding-bottom: 10px;
+}
+
+.arrow{
+margin-top: 10px;
+font-size: 1rem;
+}
+
+
+.lista{
+grid-template-columns: repeat(auto-fill,minmax(3rem,1fr));
+}
+
+
+.description {
+
+font-size: 0.3rem;
+
+}
+
+.title{
+
+font-size: 0.4rem;
+
+}
+
+.sub{
+font-family: 'Poppins', sans-serif;
+font-size: 0.3rem;
+}
+
+.pop{
+
+font-size: 1rem;
+
+
+}
+.backarrow{
+
+margin-left: 1rem;
+font-size: 0.5rem;
+
+
+}
+
+.subtitulos2{
+font-size: 0.5rem;
+
+}
+
+}
+

@@ -115,7 +115,8 @@ h1{
 
 .club{
   width: 50%;
-  display: block;
+  display:none;
+
 }
 
 
@@ -126,7 +127,7 @@ h1{
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: space-between
+  justify-content: center;
 }
 
 .card{
@@ -196,7 +197,7 @@ h1{
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
-  /* margin-bottom: 5%; */
+  margin-bottom: 5%; 
   display: flex;
   align-items: center;
   background-color: rgb(223, 101, 0);
@@ -214,7 +215,7 @@ h1{
 
 .sub{
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
+  font-size: 0.6rem;
   width: 100%
 }
 
@@ -227,12 +228,13 @@ h1{
 
 .footer{
   background-color: black;
-  padding: 5%;
+  padding: 10%;
+
 
 }
 .pop{
   font-family: 'Fredoka One';
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 100;
   margin-bottom: 0.5rem;
   width: 110px;
@@ -313,6 +315,12 @@ h1{
   .pop{
     font-size: 1.6rem;
   }
+
+  .sub{
+    font-size: 1rem;
+  width: 90%;
+
+  }
 }
 
 @media(min-width:1000px){
@@ -347,6 +355,11 @@ h1{
   .pop{
     font-size: 4rem;
     width: 100%;
+  }
+
+  .sub{
+    font-size: 1.4rem;
+
   }
 
   .arrow{

@@ -5,17 +5,17 @@
     box-sizing: border-box;
 }
 
-main section div.form-container form{
-  padding-top: 5%;
-  margin: 0 auto;
-  text-align: center;
+.form-item-container{
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+
 }
 
-main section div.form-container form div{
-  width: 100%;
-  color: rgb(241, 115, 4);
-  padding-bottom: 2%;
-  font-size: 1.5rem;
+.items{
+margin: 30px;
+margin-left: auto;
+margin-right: auto;
+width: 60%;
 }
 
 header{
@@ -228,7 +228,7 @@ h1{
 
 .footer{
   background-color: black;
-  padding: 10%;
+  padding: 40px;
 
 
 }

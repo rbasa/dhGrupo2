@@ -4,7 +4,8 @@
   "description": "+ Federico Ali: Venta de materiales de construccion.  24años  + Mariana Garcia Costoya: empleada en atencion al publico. 26 años. + Tomas Belardo: Arquitecto y diseñador 3d. 30 años.  + Rodrigo Basavilbaso: Economista y programador. 30 años.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js 8080"
   },
   "repository": {
     "type": "git",

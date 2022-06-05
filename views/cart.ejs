@@ -14,16 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="/">
-            <div class="logo"><img src="images/logo java2.svg" alt="log"></div>
-        </a>
-        <ul>
-            <li><a href="/"><span class="material-symbols-outlined menu">menu</span></a></li>
-            <li><a href="/cart"><span class="material-symbols-outlined menu">shopping_cart</span></a></li>
-            <li><a href="/login"><span class="material-symbols-outlined menu">person</span></a></li>
-        </ul>
-    </header>
+<%-include("./partials/header")%>
 
 <main>
 
@@ -109,6 +100,6 @@
 
 
 </main>
-
+<%-include("./partials/footer")%>
 </body>
 </html>

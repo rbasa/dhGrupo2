@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 3000;
 const mainRoutes = require('./routes/mainRoutes')
 
 app.use(express.static(__dirname + '/public'));
+app.set('view engine','ejs'),
 
 app.listen(PORT, ()=>{
     console.log(`Server running ar port ${PORT}`);

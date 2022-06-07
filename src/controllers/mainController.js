@@ -10,7 +10,7 @@ const readJsonFile= path=>{
 const controller = {
     index: (req, res) => {
         const productos = readJsonFile(dbProductos);
-        res.render("home",{productos:productos});
+        res.render("home", { productos: productos });
     },
 
     about: (req, res) => {

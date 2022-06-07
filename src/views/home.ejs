@@ -32,13 +32,11 @@
     <h3 class="subtitulos">Más vendidos</h3>
 
         <div class="lista">
-            <%= productos.foreEach(item,index,arr) => { %>
-            
-
+            <% productos.forEach(e => { %> 
             <article>
                 <div class="card">
                     <div class="title">
-                        <%= productos[0].nombre %>
+                        <%= e.nombre %>
                     </div>
                     <a href="/products">
                         <div>
@@ -46,12 +44,12 @@
                         </div>
                     </a>
                     <div class="description">
-                        <p><%= productos[0].descripcion %></p>
-                        <p>Precio <%= productos[0].precio %></p>
+                        <p><%= e.descripcion %></p>
+                        <p>Precio <%= e.precio %></p>
                     </div>
                 </div>
             </article>
-           <%= } %>
+           <% }) %>
         </div>
     <section class="main">  
         <img class="club" src="images/shirt logo.png">

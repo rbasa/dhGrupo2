@@ -3,5 +3,30 @@
         "nombre": "Café Colombia",
         "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
         "precio": "$700"
+    },
+
+    {
+        "nombre": "Café Ecuador",
+        "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
+        "precio": "$701"
+    },
+
+    {
+        "nombre": "Café Nicaragua",
+        "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
+        "precio": "$702"
+    },
+
+    {
+        "nombre": "Café Brasil",
+        "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
+        "precio": "$703"
+    },
+
+    {
+        "nombre": "Café Perú",
+        "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
+        "precio": "$704"
     }
+
 ]

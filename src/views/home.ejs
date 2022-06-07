@@ -32,10 +32,13 @@
     <h3 class="subtitulos">Más vendidos</h3>
 
         <div class="lista">
+            <%= productos.foreEach(item,index,arr) => { %>
+            
+
             <article>
                 <div class="card">
                     <div class="title">
-                        Ecuador
+                        <%= productos[0].nombre %>
                     </div>
                     <a href="/products">
                         <div>
@@ -43,59 +46,12 @@
                         </div>
                     </a>
                     <div class="description">
-                        <p>café en granos</p>
-                        <p>lavado</p>
-                        <p>altitud: 1900m</p>
+                        <p><%= productos[0].descripcion %></p>
+                        <p>Precio <%= productos[0].precio %></p>
                     </div>
                 </div>
             </article>
-            <article>
-                <div class="card">
-                    <div class="title"> Colombia</div>
-                    <a href="/products">
-                        <div>
-                            <img class="img" src="images/untitled-2.png">
-                        </div>
-                    </a>
-                    <div class="description">
-                        <p>café en granos</p>
-                        <p>lavado</p>
-                        <p>altitud: 1700m</p>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="card">
-                    <div class="title"> Nicaragua</div>
-                    <a href="/products">
-                        <a href="/products">
-                            <div>
-                                <img class="img" src="images/untitled-2.png">
-                            </div>
-                        </a>
-                        <div class="description">
-                            <p>café en granos</p>
-                            <p>tostado</p>
-                            <p>altitud: 1900m</p>
-                        </div>
-                    </a>
-                </div>
-            </article>
-            <article>
-                <div class="card">
-                    <div class="title"> Brasil</div>
-                    <a href="/products">
-                        <div>
-                            <img class="img" src="images/untitled-2.png">
-                        </div>
-                    </a>
-                    <div class="description">
-                        <p>café en granos</p>
-                        <p>lavado</p>
-                        <p>altitud: 1000m</p>
-                    </div>
-                </div>
-            </article>
+           <%= } %>
         </div>
     <section class="main">  
         <img class="club" src="images/shirt logo.png">

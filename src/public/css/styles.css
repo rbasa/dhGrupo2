@@ -32,6 +32,7 @@ ul{
 
 .menu{
   font-size: 1rem;
+
 }
 
 .material-symbols-outlined {
@@ -43,14 +44,20 @@ ul{
 }
 
 a{
-  color: black;
-text-decoration: none;
+color:black ;
+text-decoration: none
 }
-a:hover{
+
+
+.a:hover{
 color: rgb(225, 120, 15);
 }
 
-.navs{
+.material-symbols-outlined{
+color: white;
+}
+
+.burger{
 color: white;
 }
 .opciones{
@@ -343,9 +350,10 @@ text-decoration: underline;
 }
 
 
-
-input[value="Crear producto"]{
+input[type="submit"]{
 width: 100%;
+
+max-width: 250px;
 height: 30px;
 border: 1px solid;
 border-radius: 25px;
@@ -356,57 +364,21 @@ font-size: 0.7rem;
 cursor: pointer;
 outline: none;
 }
-input[value="Cargar imagen"]{
-width: 100%;
-height: 30px;
-border: 1px solid;
-border-radius: 25px;
-background:rgb(90, 89, 88) ;
-color: white; 
-font-family: 'Poppins', sans-serif ;
-font-size: 0.7rem;
-cursor: pointer;
-outline: none;
-margin-bottom: 20px;
+
+input[type="file"]{
+
+display: none;
 }
-input[value="Iniciar sesión"]{
-width: 100%;
-height: 30px;
-border: 1px solid;
-border-radius: 25px;
-background:rgb(229, 119, 9) ;
-color: white; 
-font-family: 'Poppins', sans-serif ;
-font-size: 0.7rem;
-cursor: pointer;
-outline: none;
-margin-bottom: 20px;
-}
-input[value="Registrarme"]{
-width: 100%;
-height: 30px;
-border: 1px solid;
-border-radius: 25px;
-background:rgb(227, 118, 10) ;
-color: white; 
-font-family: 'Poppins', sans-serif ;
-font-size: 0.7rem;
-cursor: pointer;
-outline: none;
-margin-bottom: 20px;
-}
-input[value="Ir a pagar"]{
-width: 100%;
-height: 30px;
-border: 1px solid;
-border-radius: 25px;
-background:rgb(227, 118, 10) ;
-color: white; 
-font-family: 'Poppins', sans-serif ;
-font-size: 0.7rem;
-cursor: pointer;
-outline: none;
-margin-bottom: 20px;
+
+.upload{
+display: flex;
+font-family:'Poppins', sans-serif ;
+border: 1px solid black;
+height: 40px;
+justify-content: space-around;
+border-radius: 20px;
+margin-bottom: 30px;
+align-items: center;
 }
 
 
@@ -602,8 +574,29 @@ margin-bottom: 50px;
 }
 
 
+
+.cargar{
+color: black;
+font-family: 'Poppins', sans-serif ;
+border: 1px solid black;
+border-radius: 10px;
+padding: 10px;
+max-width: 250px;
+position: relative;
+
+}
+
 .product-window-price{
 font-family: 'Poppins', sans-serif ;
+}
+.upload-image{
+color: black;
+align-items: center;
+font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }
 
 @media(min-width:460px){
@@ -632,6 +625,7 @@ font-size: 0.7rem;
 
 .burger{
 display: none;
+
 }
 
 .logo{
@@ -728,31 +722,8 @@ text-decoration: underline;
 
 }
 
-input[value="Crear producto"]{
-width: 100%;
-height: 30px;
-border: 1px solid;
-border-radius: 25px;
-background:rgb(228, 116, 4) ;
-color: white; 
-font-family: 'Poppins', sans-serif ;
-font-size: 0.7rem;
-cursor: pointer;
-outline: none;
-}
-input[value="Cargar imagen"]{
-width: 100%;
-height: 30px;
-border: 1px solid;
-border-radius: 25px;
-background:rgb(90, 89, 88) ;
-color: white; 
-font-family: 'Poppins', sans-serif ;
-font-size: 0.7rem;
-cursor: pointer;
-outline: none;
-margin-bottom: 20px;
-}
+
+
 
 
 input[type="submit"]:hover{
@@ -919,5 +890,6 @@ margin-top: 1rem;
 font-size: 2rem;
 
 }
+
 
 }

@@ -7,6 +7,7 @@ router.get('/cart', controller.cart);
 router.get('/login', controller.login);
 router.get('/register', controller.register);
 router.get('/products', controller.products);
+router.get('/create', controller.create)
 
 module.exports = router
 

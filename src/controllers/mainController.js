@@ -17,16 +17,20 @@ const controller = {
         res.render(path.join("about"));
     },
     cart: (req, res) => {
-        res.render("cart");
+        res.render("products/cart");
     },
     products: (req, res) => {
-        res.render("products");
+        res.render("products/products");
     },
     login: (req, res) => {
-        res.render("login");
+        res.render("users/login");
     },
     register: (req, res) => {
-        res.render("register");
-    }
+        res.render("users/register");
+    },
+    create: (req, res) => {
+        res.render("admin/create");
+    },
+
 }
 module.exports = controller;

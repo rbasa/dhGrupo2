@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>JAVA CAFE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="css/styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@200&display=swap" rel="stylesheet">
-</head>
+<%- include("./partials/head") %>
+
+
 <body>
 <%-include("./partials/header")%>
     <div class="main-image">
@@ -35,17 +20,17 @@
             <% productos.forEach(e => { %> 
             <article>
                 <div class="card">
-                    <div class="title">
+                    <div class="product_title">
                         <%= e.nombre %>
                     </div>
                     <a href="/products">
                         <div>
-                            <img class="img" src="images/untitled-2.png">
+                            <img class="img" src= <%= e.imagen %> >
                         </div>
                     </a>
-                    <div class="description">
-                        <p><%= e.descripcion %></p>
-                        <p>Precio <%= e.precio %></p>
+                    <div >
+                        <p class="description_producto"><%= e.descripcion %></p>
+                        <p class="precio_producto"><%= e.precio %></p>
                     </div>
                 </div>
             </article>

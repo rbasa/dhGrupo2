@@ -126,9 +126,10 @@ h1{
   max-width: 200px;
 }
 
-.title{
-  margin-left: 20%;
+.product_title{
+  margin-left: 10%;
   margin-top: 10%;
+  margin-bottom: 10px;
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
 }
@@ -157,11 +158,20 @@ h1{
   align-items: center;
   background-color: rgb(223, 101, 0);
 }
-.description {
-  margin-left: 20%;
-  margin-bottom: 10%;
+.description_producto {
+  margin-top: 10px;
+  margin-left: 10%;
+  margin-bottom: 10px;
   font-family: 'Poppins', sans-serif;
   font-size: 0.6rem;
+  width: 80%;
+}
+.precio_producto {
+  margin-left: 10%;
+  margin-bottom: 10%;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold ;
+  font-size: 0.8rem;
 }
 
 .cuerpo{
@@ -320,7 +330,7 @@ text-decoration: underline;
 
 
 
-input[type="Submit"]{
+input[value="Crear producto"]{
 width: 100%;
 height: 30px;
 border: 1px solid;
@@ -331,6 +341,19 @@ font-family: 'Poppins', sans-serif ;
 font-size: 0.7rem;
 cursor: pointer;
 outline: none;
+}
+input[value="Cargar imagen"]{
+width: 100%;
+height: 30px;
+border: 1px solid;
+border-radius: 25px;
+background:rgb(90, 89, 88) ;
+color: white; 
+font-family: 'Poppins', sans-serif ;
+font-size: 0.7rem;
+cursor: pointer;
+outline: none;
+margin-bottom: 20px;
 }
 
 
@@ -640,7 +663,7 @@ text-decoration: underline;
 
 }
 
-input[type="submit"]{
+input[value="Crear producto"]{
 width: 100%;
 height: 30px;
 border: 1px solid;
@@ -652,6 +675,20 @@ font-size: 0.7rem;
 cursor: pointer;
 outline: none;
 }
+input[value="Cargar imagen"]{
+width: 100%;
+height: 30px;
+border: 1px solid;
+border-radius: 25px;
+background:rgb(90, 89, 88) ;
+color: white; 
+font-family: 'Poppins', sans-serif ;
+font-size: 0.7rem;
+cursor: pointer;
+outline: none;
+margin-bottom: 20px;
+}
+
 
 input[type="submit"]:hover{
 border-color: #adadad;

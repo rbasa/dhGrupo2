@@ -43,8 +43,13 @@ ul{
 }
 
 a{
-  color: whitesmoke;
+  color: black;
+text-decoration: none;
 }
+a:hover{
+color: rgb(225, 120, 15);
+}
+
 .opciones{
 display: flex;
 font-family: 'Poppins', sans-serif;
@@ -354,6 +359,45 @@ height: 30px;
 border: 1px solid;
 border-radius: 25px;
 background:rgb(90, 89, 88) ;
+color: white; 
+font-family: 'Poppins', sans-serif ;
+font-size: 0.7rem;
+cursor: pointer;
+outline: none;
+margin-bottom: 20px;
+}
+input[value="Iniciar sesión"]{
+width: 100%;
+height: 30px;
+border: 1px solid;
+border-radius: 25px;
+background:rgb(229, 119, 9) ;
+color: white; 
+font-family: 'Poppins', sans-serif ;
+font-size: 0.7rem;
+cursor: pointer;
+outline: none;
+margin-bottom: 20px;
+}
+input[value="Registrarme"]{
+width: 100%;
+height: 30px;
+border: 1px solid;
+border-radius: 25px;
+background:rgb(227, 118, 10) ;
+color: white; 
+font-family: 'Poppins', sans-serif ;
+font-size: 0.7rem;
+cursor: pointer;
+outline: none;
+margin-bottom: 20px;
+}
+input[value="Ir a pagar"]{
+width: 100%;
+height: 30px;
+border: 1px solid;
+border-radius: 25px;
+background:rgb(227, 118, 10) ;
 color: white; 
 font-family: 'Poppins', sans-serif ;
 font-size: 0.7rem;
@@ -833,10 +877,6 @@ font-size: 2rem;
     font-size: 2rem;
   }
 .opciones{
-display: flex;
-font-family: 'Poppins', sans-serif;
-justify-content: space-around;
-padding: 20px;
 font-size: 1.2rem;
 }
   h1{

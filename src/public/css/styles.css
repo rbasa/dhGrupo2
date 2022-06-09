@@ -50,6 +50,9 @@ a:hover{
 color: rgb(225, 120, 15);
 }
 
+.navs{
+color: white;
+}
 .opciones{
 display: flex;
 font-family: 'Poppins', sans-serif;

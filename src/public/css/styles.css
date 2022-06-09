@@ -45,7 +45,13 @@ ul{
 a{
   color: whitesmoke;
 }
-
+.opciones{
+display: flex;
+font-family: 'Poppins', sans-serif;
+justify-content: space-around;
+padding: 20px;
+display: none;
+}
 
 .banner{
   background-image: url(/images/banner.png);
@@ -569,11 +575,23 @@ font-family: 'Poppins', sans-serif ;
     height: 45px;
   }
 
-  .logo{
+.opciones{
+display: flex;
+font-family: 'Poppins', sans-serif;
+justify-content: space-around;
+padding: 20px;
+font-size: 0.7rem;
+}
+
+.burger{
+display: none;
+}
+
+.logo{
     height: 35px;
   }
 
-  ul{
+ul{
     width: 100px;
   }
 
@@ -801,6 +819,8 @@ font-size: 2rem;
     height: 70px;
   }
 
+
+
   .logo{
     height: 60px;
   }
@@ -812,7 +832,13 @@ font-size: 2rem;
   .menu{
     font-size: 2rem;
   }
-
+.opciones{
+display: flex;
+font-family: 'Poppins', sans-serif;
+justify-content: space-around;
+padding: 20px;
+font-size: 1.2rem;
+}
   h1{
     font-size: 2.5rem;
   }

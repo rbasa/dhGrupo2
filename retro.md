@@ -23,3 +23,21 @@
 ### Dejar de hacer
 
 - En principio creemos que en este punto no tenemos mucho para mencionar ya que no fué muy extenso este sprint y por ende no salieron cosas criticas para dejar de hacer.
+
+## Sprints 2 y 3
+
+### Comenzar a hacer
+- Distribuir las tareas de manera mas equitativa
+
+### Hacer más
+- Estar mas pendientes a Trello para ver que tareas falta completar
+
+### Continuar haciendo
+- Comunicar los cambios en el repositorio
+- Continuar con la comunicacion fluida y el buen ambiente de trabajo
+
+### Hacer menos
+- Que un compañero tenga mas trabajo que otro
+
+### Dejar de hacer
+- Distribuir mal las tareas

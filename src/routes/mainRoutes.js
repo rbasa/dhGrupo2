@@ -7,6 +7,13 @@ router.get('/cart', controller.cart);
 router.get('/login', controller.login);
 router.get('/register', controller.register);
 router.get('/products', controller.products);
+router.get('/products/create', controller.productCreate);
+router.get('/products/:id', controller.productsId);
+router.post('/products', controller.productsNew);
+router.get('/products/:id/edit', controller.productsEdit);
+router.put('/products/:id', controller.productsPut);
+router.delete('/products/:id', controller.productsDelete);
+
 router.get('/create', controller.create)
 
 module.exports = router

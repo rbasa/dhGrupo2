@@ -22,7 +22,7 @@ const controller = {
   products: (req, res) => {
     res.render("products/products");
   },
-  productsCreate: (req, res) => {
+  productCreate: (req, res) => {
     res.render("/products/create");
   },
 
@@ -34,7 +34,6 @@ const controller = {
   
   productsEdit: (req, res) => {
     const id = req.params.id;
-
     res.render("products/edit", { id: id });
   },
   
@@ -59,8 +58,6 @@ const controller = {
     productos.push(nuevoProducto)
     fs.writeFileSync(dbProductos, JSON.stringify(productos, null, 2))
     res.render('products/products');
-
-
   },
   
   productsPut: (req, res) => {
@@ -78,9 +75,9 @@ const controller = {
     fs.writeFileSync(dbProductos, JSON.stringify(productos, null, 2));
     res.render("products/products", { id: id });
   },
-
-
-
+  productsDelete:(req,res)=>{
+    res.send("soy el delete")
+  },
   login: (req, res) => {
     res.render("users/login");
   },

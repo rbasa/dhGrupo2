@@ -9,18 +9,20 @@ const readJsonFile = (path) => {
 
 const productController = {
   products: (req, res) => {
-    res.render("products/products");
+    res.render("products");
   },
   productsCreate: (req, res) => {
-    res.render("/products/create");
+    res.render("create");
   },
   productsId: (req, res) => {
     const id = req.params.id;
-    res.render("products/products", { id: id });
+    res.render("products", { id: id });
   },
   productsEdit: (req, res) => {
+    const productos = readJsonFile(dbProductos);
     const id = req.params.id;
-    res.render("products/edit", { id: id });
+    const producto=productos[id];
+    res.render("edit", { producto: producto });
   },
   productsNew: (req, res) =>{
     const productos = readJsonFile(dbProductos);
@@ -40,7 +42,7 @@ const productController = {
     };
     productos.push(nuevoProducto)
     fs.writeFileSync(dbProductos, JSON.stringify(productos, null, 2))
-    res.render('products/products');
+    res.render('products');
   },
   productsPut: (req, res) => {
     const productos = readJsonFile(dbProductos);

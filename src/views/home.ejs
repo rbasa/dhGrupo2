@@ -1,55 +1,51 @@
 <%- include("./partials/head") %>
-
-
-<body>
-<%-include("./partials/header")%>
-
-    <div class="opciones">
-    <p><a href="#">CAFES</a></p><p><a href="#">MAQUINAS</a></p><p><a href="#">ACCESORIOS</a></p><p><a href="#">MAPA DE LOCALES</a></p><p><a href="#">JAVA CLUB</a></p>
-    </div>
-    <div class="main-image">
-        <div class="container">
-            <h1>
-                <p>Del grano al café.</p>
-                <span>Todo en uno.</span>
-            </h1>
-            <h4 class="cen">Descubrí nuestra linea de cafeteras totalmente automáticas</h4>
-            <p class="material-symbols-outlined arrow"> arrow_forward_ios</p>
+    <body>
+        <%-include("./partials/header")%>
+        <div class="opciones">
+        <p><a href="#">CAFES</a></p><p><a href="#">MAQUINAS</a></p><p><a href="#">ACCESORIOS</a></p><p><a href="#">MAPA DE LOCALES</a></p><p><a href="#">JAVA CLUB</a></p>
         </div>
-    </div>
+        <div class="main-image">
+            <div class="container">
+                <h1>
+                    <p>Del grano al café.</p>
+                    <span>Todo en uno.</span>
+                </h1>
+                <h4 class="cen">Descubrí nuestra linea de cafeteras totalmente automáticas</h4>
+                <p class="material-symbols-outlined arrow"> arrow_forward_ios</p>
+            </div>
+        </div>
+        <h3 class="subtitulos">Más vendidos</h3>
 
-    <h3 class="subtitulos">Más vendidos</h3>
-
-        <div class="lista">
-            <% productos.forEach(e => { %> 
-            <article>
-                <div class="card">
-                    <div class="product_title">
-                        <%= e.nombre %>
-                    </div>
-                    <a href="/products">
-                        <div>
-                            <img class="img" src= <%= e.imagen %> >
+            <div class="lista">
+                <% productos.forEach(e => { %> 
+                <article>
+                    <div class="card">
+                        <div class="product_title">
+                            <%= e.nombre %>
                         </div>
-                    </a>
-                    <div >
-                        <p class="description_producto"><%= e.descripcion %></p>
-                        <p class="precio_producto"><%= e.precio %></p>
+                        <a href="/products">
+                            <div>
+                                <img class="img" src= <%= e.imagen %> >
+                            </div>
+                        </a>
+                        <div >
+                            <p class="description_producto"><%= e.descripcion %></p>
+                            <p class="precio_producto"><%= e.precio %></p>
+                        </div>
                     </div>
-                </div>
-            </article>
-           <% }) %>
-        </div>
-    <section class="main">  
-        <img class="club" src="images/shirt logo.png">
-        <div class="cuerpo">
-        <h1 class="pop">Unite al club</h1>
-        <p class="sub">Descubrí los beneficios del Java Club. Hacé pedidos, suma puntos, obtené acceso a eventos y conectate con otros miembros</p>
-        <p class="material-symbols-outlined arrow"> arrow_forward_ios</p>
-        </div>    
-    </section>
+                </article>
+            <% }) %>
+            </div>
+        <section class="main">  
+            <img class="club" src="images/shirt logo.png">
+            <div class="cuerpo">
+            <h1 class="pop">Unite al club</h1>
+            <p class="sub">Descubrí los beneficios del Java Club. Hacé pedidos, suma puntos, obtené acceso a eventos y conectate con otros miembros</p>
+            <p class="material-symbols-outlined arrow"> arrow_forward_ios</p>
+            </div>    
+        </section>
 
-<%-include("./partials/footer")%>
+        <%-include("./partials/footer")%>
 
-</body>
+    </body>
 </html>

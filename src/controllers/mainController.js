@@ -1,6 +1,11 @@
 const path = require("path");
 const fs = require("fs");
 const dbProductos = path.join(__dirname, "../database/productos.json");
+const readJsonFile = (path) => {
+  const data = fs.readFileSync(path, "utf-8");
+  const dataParse = JSON.parse(data);
+  return dataParse;
+};
 
 const controller = {
   index: (req, res) => {
@@ -20,7 +25,7 @@ const controller = {
     res.render("users/register");
   },
   create: (req, res) => {
-    res.render("admin/create");
+    res.render("/create");
   },
 };
 module.exports = controller;

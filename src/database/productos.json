@@ -1,31 +1,98 @@
 [
     {
+        "id":1,
         "nombre": "Café Colombia",
         "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
         "precio": "$700",
+        "categoria": "principal",
         "imagen":"images/colombia.png"
     },
-
     {
+        "id":2,
         "nombre": "Café Nicaragua",
         "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
         "precio": "$701",
+        "categoria": "principal",
         "imagen":"images/nicaragua.png"
-        
     },
-
     {
+        "id":3,
         "nombre": "Café Kenya",
         "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
         "precio": "$702",
+        "categoria": "principal",
         "imagen":"images/kenya.png"
     },
-
     {
-        
+        "id":4,
         "nombre": "Café Brasil",
         "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
         "precio": "$703",
+        "categoria": "principal",
+        "imagen":"images/Brasil.png"
+    },
+    {
+        "id":5,
+        "nombre": "Café Colombia Premium",
+        "descripcion": "Su sabor es potente y permanente en boca. Café seleccionado intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
+        "precio": "$900",
+        "categoria": "principal",
+        "imagen":"images/colombia.png"
+    },
+    {
+        "id":6,
+        "nombre": "Café Nicaragua Premium",
+        "descripcion": "Su sabor es potente y permanente en boca. Café seleccionado intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
+        "precio": "$901",
+        "categoria": "principal",
+        "imagen":"images/nicaragua.png"
+    },
+    {
+        "id":7,
+        "nombre": "Café Kenya Premium",
+        "descripcion": "Su sabor es potente y permanente en boca. Café seleccionado intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
+        "precio": "$902",
+        "categoria": "principal",
+        "imagen":"images/kenya.png"
+    },
+    {
+        "id":8,
+        "nombre": "Café Brasil Premium",
+        "descripcion": "Su sabor es potente y permanente en boca. Café seleccionadointenso. Tonos de fruta tropical, cuerpo y acidez media. ",
+        "precio": "$903",
+        "categoria": "principal",
+        "imagen":"images/Brasil.png"
+    },
+    {
+        "id":9,
+        "nombre": "Taza de Café",
+        "descripcion": "Disfrutá de tu café en una tasa acorde",
+        "precio": "$400",
+        "categoria": "articulo",
+        "imagen":"images/colombia.png"
+    },
+    {
+        "id":10,
+        "nombre": "Remera JavaCafé",
+        "descripcion": "Talle único",
+        "precio": "$1901",
+        "categoria": "articulo",
+        "imagen":"images/nicaragua.png"
+    },
+    {
+        "id":11,
+        "nombre": "Llavero JavaCafé",
+        "descripcion": "Todas tus llaves en un solo lugar",
+        "precio": "$602",
+        "categoria": "articulo",
+        "imagen":"images/kenya.png"
+    },
+    {
+        "id":12,
+        "nombre": "Cafetera JavaCafé",
+        "descripcion": "Cafetera automática para que disfrutes tu café ni bien te levantas",
+        "precio": "$4900",
+        "categoria": "articulo",
         "imagen":"images/Brasil.png"
     }
 ]

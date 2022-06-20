@@ -1,0 +1,46 @@
+<%- include("../partials/head") %>
+
+<body>
+    <%- include("../partials/header") %>
+    <main class="main-edit">
+        <div class="lista">
+            <article>
+                <div class="card-product-edit">
+                    <div class="product_title">
+                        <%= producto.nombre %>
+                    </div>
+                    <a href="/products">
+                        <div>
+                            <img class="img" src= <%= '/'+ producto.imagen %> >
+                        </div>
+                    </a>
+                    <div >
+                        <p class="description_producto"><%= producto.descripcion %></p>
+                        <p class="precio_producto"><%= producto.precio %></p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="lista">
+            <article>
+                <div class="card-product-edit">
+                    <div class="product_title">
+                        <%= producto.nombre %>
+                    </div>
+                    <a href="/products">
+                        <div>
+                            <img class="img" src= <%= '/'+ producto.imagen %> >
+                        </div>
+                    </a>
+                    <div >
+                        <p class="description_producto"><%= producto.descripcion %></p>
+                        <p class="precio_producto"><%= producto.precio %></p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <span class="material-symbols-outlined">delete</span>
+    </main>
+</body>
+</html>
+

@@ -1,14 +1,11 @@
-<%- include("./partials/head") %>
-
+<%- include("../partials/head") %>
 <body>
-<%-include("./partials/header")%>
+<%- include("../partials/header") %>
     <main>
-                <section class="login_full">
-
-           
+        <section class="login_full">
             <div>
                 <h2>Crear producto</h2>  
-            <div class="center">
+                <div class="center">
                 <form class="formulario" method="post">
                     <div class="txt_field">
                         <input type="text" required>
@@ -30,25 +27,13 @@
                         <span></span>
                         <label>Precio</label>
                     </div>
-
                     <div class="upload">
-
-                    <input type="file" id="file" accept="image/*">
-                    <label for="file"> Cargar imagen</label>
-  
-
+                        <input type="file" id="file" accept="image/*">
+                        <label for="file"> Cargar imagen</label>
                     </div>
-
-                    <input type="submit" value="Crear producto">
-                    </form>
-
-                    
-             
-                </div>
+                    <input type="submit" value="Crear producto">            
                 </form>
-
-        </div>
-
+            </div>
         </section>
                 </form>
             </div>

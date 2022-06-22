@@ -9,7 +9,17 @@ const readJsonFile = (path) => {
 
 const productController = {
   products: (req, res) => {
-    res.render("products/products");
+    const productos = readJsonFile(dbProductos);
+    const id = req.params.id;
+    // const producto = productos.reduce(e=> e.id == id)
+    productos.forEach(el => {
+        if (el.id == id){
+            const hola = el;
+        }else{
+            hola = "hola"
+        }
+    });
+    res.render("products/products", { producto: hola });
   },
   productsCreate: (req, res) => {
     res.render("products/create");

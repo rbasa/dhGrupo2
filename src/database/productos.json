@@ -4,7 +4,7 @@
         "nombre": "Café Colombia",
         "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
         "precio": "$700",
-        "categoria": "principal",
+        "categoria": "cafe",
         "imagen":"images/colombia.png"
     },
     {
@@ -12,7 +12,7 @@
         "nombre": "Café Nicaragua",
         "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
         "precio": "$701",
-        "categoria": "principal",
+        "categoria": "cafe",
         "imagen":"images/nicaragua.png"
     },
     {
@@ -20,7 +20,7 @@
         "nombre": "Café Kenya",
         "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
         "precio": "$702",
-        "categoria": "principal",
+        "categoria": "cafe",
         "imagen":"images/kenya.png"
     },
     {
@@ -28,63 +28,63 @@
         "nombre": "Café Brasil",
         "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
         "precio": "$703",
-        "categoria": "principal",
+        "categoria": "cafe",
         "imagen":"images/brasil.png"
     },
     {
         "id":5,
-        "nombre": "Café Colombia Premium",
-        "descripcion": "Su sabor es potente y permanente en boca. Café seleccionado intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
+        "nombre": "Remera negra",
+        "descripcion": "talle único ",
         "precio": "$900",
-        "categoria": "principal",
-        "imagen":"images/colombia.png"
+        "categoria": "accesorios",
+        "imagen":"images/remera_negra.png"
     },
     {
         "id":6,
-        "nombre": "Café Nicaragua Premium",
-        "descripcion": "Su sabor es potente y permanente en boca. Café seleccionado intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
-        "precio": "$901",
-        "categoria": "principal",
-        "imagen":"images/nicaragua.png"
+        "nombre": "Remera blanca",
+        "descripcion": "talle único - algodon ",
+        "precio": "$900",
+        "categoria": "accesorio",
+        "imagen":"images/shirt_logo.png"
     },
     {
         "id":7,
-        "nombre": "Café Kenya Premium",
-        "descripcion": "Su sabor es potente y permanente en boca. Café seleccionado intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
-        "precio": "$902",
-        "categoria": "principal",
-        "imagen":"images/kenya.png"
+        "nombre": "Termo blanco",
+        "descripcion": "vaso térmico-capacidad 500cc-acero inoxidable ",
+        "precio": "$1500",
+        "categoria": "accesorios",
+        "imagen":"images/termo_blanco_logo.png"
     },
     {
         "id":8,
-        "nombre": "Café Brasil Premium",
-        "descripcion": "Su sabor es potente y permanente en boca. Café seleccionadointenso. Tonos de fruta tropical, cuerpo y acidez media. ",
-        "precio": "$903",
-        "categoria": "principal",
-        "imagen":"images/brasil.png"
+        "nombre": "Termo naranja",
+        "descripcion": "vaso térmico-capacidad 500cc-acero inoxidable",
+        "precio": "$1500",
+        "categoria": "accesorios",
+        "imagen":"images/termo_naranja_logo.png"
     },
     {
         "id":9,
-        "nombre": "Taza de Café",
-        "descripcion": "Disfrutá de tu café en una tasa acorde",
-        "precio": "$400",
-        "categoria": "articulo",
-        "imagen":"images/colombia.png"
+        "nombre": "Termo negro",
+        "descripcion": "vaso térmico-capacidad 500cc-acero inoxidable",
+        "precio": "$1500",
+        "categoria": "accesorios",
+        "imagen":"images/termo_negro_2_logo.png"
     },
     {
         "id":10,
-        "nombre": "Remera JavaCafé",
-        "descripcion": "Talle único",
-        "precio": "$1901",
-        "categoria": "articulo",
-        "imagen":"images/nicaragua.png"
+        "nombre": "Termo metal",
+        "descripcion": "vaso térmico-capacidad 500cc-acero inoxidable",
+        "precio": "$1500",
+        "categoria": "indumentaria",
+        "imagen":"images/termo_negro_logo.png"
     },
     {
         "id":11,
         "nombre": "Llavero JavaCafé",
         "descripcion": "Todas tus llaves en un solo lugar",
         "precio": "$602",
-        "categoria": "articulo",
+        "categoria": "accesorio",
         "imagen":"images/kenya.png"
     },
     {
@@ -92,7 +92,73 @@
         "nombre": "Cafetera JavaCafé",
         "descripcion": "Cafetera automática para que disfrutes tu café ni bien te",
         "precio": "$4900",
-        "categoria": "articulo",
+        "categoria": "cafetera",
+        "imagen":"images/brasil.png"
+    },
+    
+    {
+        "id":13,                                                             
+        "nombre": "Cafetera espresso",
+        "descripcion": "2L de capacidad, metalica potencia de 850W",
+        "precio": "$12500",
+        "categoria": "cafetera",
+        "imagen":"images/brasil.png"
+    },
+    {
+        "id":14,
+        "nombre": "Cafetera para capsulas ",
+        "descripcion": "tiene filtro permanente, potencia de 1500W, incluye bandeja recolectora",
+        "precio": "$22000",
+        "categoria": "cafeteras",
+        "imagen":"images/brasil.png"
+    },
+    {
+        "id":15,
+        "nombre": "Vaso termico de la marca",
+        "descripcion": "Vaso de 500ml",
+        "precio": "$2000",
+        "categoria": "accesorios",
+        "imagen":"images/brasil.png"
+    },
+    {
+        "id":16,
+        "nombre": "buzo de la marca ",
+        "descripcion": "Disponibles en talles  L XL",
+        "precio": "$4900",
+        "categoria": "indumentaria",
+        "imagen":"images/brasil.png"
+    },
+    {
+        "id":17,
+        "nombre": "Gorra de la marca",
+        "descripcion": "Talle unico ",
+        "precio": "$500",
+        "categoria": "indumentaria",
+        "imagen":"images/colombia.png"
+    },
+    {
+        "id":18,
+        "nombre": "Bandeja desayunadora",
+        "descripcion": "Dimensiones: 20x30cm",
+        "precio": "$1000",
+        "categoria": "accesorios",
+        "imagen":"images/brasil.png"
+    },
+    {
+        "id":19,
+        "nombre": "Calcomania",
+        "descripcion": "Logo de la marca",
+        "precio": "$150",
+        "categoria": "accesorios",
+        "imagen":"images/brasil.png"
+    },
+    {
+        "id":20,
+        "nombre": "espumador de cafe ",
+        "descripcion": "espumador",
+        "precio": "$750",
+        "categoria": "accsesorios",
         "imagen":"images/brasil.png"
     }
+   
 ]

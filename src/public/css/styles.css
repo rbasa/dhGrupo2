@@ -15,6 +15,12 @@ main.main-edit{
 justify-content: center;
 }
 
+.precio_producto_edit{
+font-size: 1rem;
+font-family: 'Poppins', sans-serif ;
+padding-bottom: 0.8rem;
+}
+
 .edit-product{
 display: flex;
 justify-content: center;
@@ -71,7 +77,7 @@ color: white;
 }
 
 .iconos_edit{
-font-size: 3rem;
+font-size: 2rem;
 color: rgb(39, 39, 39);
 background-color: white;
 }
@@ -160,6 +166,7 @@ h1{
 }
 
 
+
 .lista{
   margin-left: 10%;
   margin-right: 10%;
@@ -180,6 +187,13 @@ h1{
   border: 1px solid black;
   border-radius: 10px;
   width: 100%;
+  font-family: 'Poppins', sans-serif;
+justify-content: center;
+}
+
+.imagen_edit{
+display: flex;
+justify-content: center;
 }
 
 .product_title{
@@ -191,7 +205,7 @@ h1{
 }
 
 .img{
-  margin-left: 10%;
+
   width: 75%;
 }
 
@@ -586,12 +600,28 @@ font-family: 'Poppins', sans-serif ;
 font-size: 0.8rem;
 margin-left: 10%;
 }
+.product_title_edit{
+padding-top: 1rem;
+padding-bottom: 0.2rem;
+padding-left: 12%;
+font-size: 0.7rem;
+font-weight: 600;
+font-family: 'Poppins', sans-serif ;
+text-decoration: underline;
+}
 
+.precio_producto_edit{
+font-size: 0.7rem;
+font-family: 'Poppins', sans-serif ;
+padding-left: 12%;
+padding-bottom: 0.8rem;
+}
 .prod-sub{
 font-family: 'Poppins', sans-serif ;
 font-size: 0.6rem;
-margin-left: 10%;
 width: 80%;
+margin-bottom: 0.5rem;
+margin-top: 0.5rem;
 }
 
 .product-bottom{
@@ -672,6 +702,7 @@ font-variation-settings:
   ul{
     width: 100px;
   }
+
 .arrow2{
   margin-top: 5px;
   font-size: 3rem;
@@ -802,13 +833,13 @@ font-variation-settings:
   margin-top: 10px;
   font-size: 1.3rem;
   }
+
 .prod-sub{
 font-family: 'Poppins', sans-serif ;
 font-size: 1rem;
 margin-bottom: 1rem;
-
-
 }
+
   .productprice{
   font-family: 'Poppins', sans-serif ;
   font-size: 1.2rem;
@@ -916,10 +947,10 @@ font-size: 2rem;
 }
 
 .product_title_edit{
-margin-left: 10%;
-padding-top: 2rem;
+padding-top: 1rem;
 padding-bottom: 0.2rem;
-font-size: 2rem;
+padding-left: 10%;
+font-size: 1.7rem;
 font-weight: 600;
 font-family: 'Poppins', sans-serif ;
 text-decoration: underline;
@@ -928,7 +959,7 @@ text-decoration: underline;
 .precio_producto_edit{
 font-size: 2rem;
 font-family: 'Poppins', sans-serif ;
-margin-left: 10%;
+padding-left: 10%;
 padding-bottom: 0.8rem;
 }
 

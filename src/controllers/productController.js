@@ -9,14 +9,20 @@ const readJsonFile = (path) => {
 
 const productController = {
   products: (req, res) => {
-    res.render("products/products");
+   const productos = readJsonFile(dbProductos);
+    const id = req.params.id;
+    productos.forEach(el => {
+    let producto
+    el.id == id ? producto = el: false;
+  })
+    res.render("products/products", { producto: producto });
   },
   productsCreate: (req, res) => {
     res.render("products/create");
   },
   productsId: (req, res) => {
     const id = req.params.id;
-    res.render("products/products", { id: id });
+    res.render("products/", { id: id });
   },
   productsEdit: (req, res) => {
     const productos = readJsonFile(dbProductos);

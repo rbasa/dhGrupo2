@@ -4,42 +4,26 @@
     <%- include("../partials/header") %>
     <main class="main-edit">
         <div class="lista">
-            <article>
+            <article class="edit-product">
                 <div class="card-product-edit">
-                    <div class="product_title">
+                    <div class="product_title_edit">
                         <%= producto.nombre %>
+                    </div>
+                    <div >
+                        <p class="precio_producto_edit"><%= producto.precio %></p>
                     </div>
                     <a href="/products">
                         <div>
                             <img class="img" src= <%= '/'+ producto.imagen %> >
                         </div>
                     </a>
-                    <div >
-                        <p class="description_producto"><%= producto.descripcion %></p>
-                        <p class="precio_producto"><%= producto.precio %></p>
+                    <div class="botones-edit">
+                    <a href="/products/<% producto.id %>/edit"><button><span class="material-symbols-outlined iconos_edit">edit</span></button></a>
+                    <a href="/edit/<% producto.id %>"><button><span class="material-symbols-outlined iconos_edit">delete</span></button></a>
                     </div>
                 </div>
             </article>
         </div>
-        <div class="lista">
-            <article>
-                <div class="card-product-edit">
-                    <div class="product_title">
-                        <%= producto.nombre %>
-                    </div>
-                    <a href="/products">
-                        <div>
-                            <img class="img" src= <%= '/'+ producto.imagen %> >
-                        </div>
-                    </a>
-                    <div >
-                        <p class="description_producto"><%= producto.descripcion %></p>
-                        <p class="precio_producto"><%= producto.precio %></p>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <span class="material-symbols-outlined">delete</span>
     </main>
 </body>
 </html>

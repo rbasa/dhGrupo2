@@ -33,51 +33,51 @@
     },
     {
         "id":5,
-        "nombre": "Café Colombia Premium",
-        "descripcion": "Su sabor es potente y permanente en boca. Café seleccionado intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
+        "nombre": "Remera negra",
+        "descripcion": "talle único ",
         "precio": "$900",
-        "categoria": "cafe",
-        "imagen":"images/colombia.png"
+        "categoria": "accesorios",
+        "imagen":"images/remera_negra.png"
     },
     {
         "id":6,
-        "nombre": "Café Nicaragua Premium",
-        "descripcion": "Su sabor es potente y permanente en boca. Café seleccionado intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
-        "precio": "$901",
-        "categoria": "cafe",
-        "imagen":"images/nicaragua.png"
+        "nombre": "Remera blanca",
+        "descripcion": "talle único - algodon ",
+        "precio": "$900",
+        "categoria": "accesorio",
+        "imagen":"images/shirt_logo.png"
     },
     {
         "id":7,
-        "nombre": "Café Kenya Premium",
-        "descripcion": "Su sabor es potente y permanente en boca. Café seleccionado intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
-        "precio": "$902",
-        "categoria": "cafe",
-        "imagen":"images/kenya.png"
+        "nombre": "Termo blanco",
+        "descripcion": "vaso térmico-capacidad 500cc-acero inoxidable ",
+        "precio": "$1500",
+        "categoria": "accesorios",
+        "imagen":"images/termo_blanco_logo.png"
     },
     {
         "id":8,
-        "nombre": "Café Brasil Premium",
-        "descripcion": "Su sabor es potente y permanente en boca. Café seleccionadointenso. Tonos de fruta tropical, cuerpo y acidez media. ",
-        "precio": "$903",
-        "categoria": "cafe",
-        "imagen":"images/brasil.png"
+        "nombre": "Termo naranja",
+        "descripcion": "vaso térmico-capacidad 500cc-acero inoxidable",
+        "precio": "$1500",
+        "categoria": "accesorios",
+        "imagen":"images/termo_naranja_logo.png"
     },
     {
         "id":9,
-        "nombre": "Taza de Café",
-        "descripcion": "Disfrutá de tu café en una tasa acorde",
-        "precio": "$400",
+        "nombre": "Termo negro",
+        "descripcion": "vaso térmico-capacidad 500cc-acero inoxidable",
+        "precio": "$1500",
         "categoria": "accesorios",
-        "imagen":"images/colombia.png"
+        "imagen":"images/termo_negro_2_logo.png"
     },
     {
         "id":10,
-        "nombre": "Remera JavaCafé",
-        "descripcion": "Talle único",
-        "precio": "$1901",
+        "nombre": "Termo metal",
+        "descripcion": "vaso térmico-capacidad 500cc-acero inoxidable",
+        "precio": "$1500",
         "categoria": "indumentaria",
-        "imagen":"images/nicaragua.png"
+        "imagen":"images/termo_negro_logo.png"
     },
     {
         "id":11,

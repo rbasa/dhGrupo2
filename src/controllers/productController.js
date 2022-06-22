@@ -11,12 +11,8 @@ const productController = {
   products: (req, res) => {
    const productos = readJsonFile(dbProductos);
     const id = req.params.id;
-    // const producto = productos.reduce(e=> e.id == id)
-    productos.forEach(el => {
-    let producto
-    el.id == id ? producto = el: false;
-  })
-    res.render("products/products", { producto: producto });
+    const producto = productos.find(el => el.id == id) ? productos.find(el => el.id == id) : res.send("el producto no existe")
+    res.render("products/products", {producto: producto});
   },
   productsCreate: (req, res) => {
     res.render("products/create");

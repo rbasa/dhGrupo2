@@ -12,8 +12,7 @@ header{
 }
 main.main-edit{
   display: flex;
-  margin-left: auto;
-margin-right: auto;
+justify-content: center;
 }
 
 .edit-product{
@@ -803,7 +802,13 @@ font-variation-settings:
   margin-top: 10px;
   font-size: 1.3rem;
   }
+.prod-sub{
+font-family: 'Poppins', sans-serif ;
+font-size: 1rem;
+margin-bottom: 1rem;
 
+
+}
   .productprice{
   font-family: 'Poppins', sans-serif ;
   font-size: 1.2rem;

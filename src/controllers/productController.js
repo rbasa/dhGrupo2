@@ -24,7 +24,7 @@ const productController = {
   productsEdit: (req, res) => {
     const productos = readJsonFile(dbProductos);
     const id = req.params.id;
-    const producto = productos[id];
+    const producto = productos[id-1];
     res.render("products/edit", { producto: producto });
   },
   productsNew: (req, res) =>{

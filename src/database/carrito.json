@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "nombre": "Café Colombia",
+        "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
+        "precio": "$700",
+        "categoria": "cafe",
+        "imagen":"images/colombia.png"
+    },
+    {
+        "id":2,
+        "nombre": "Café Nicaragua",
+        "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
+        "precio": "$701",
+        "categoria": "cafe",
+        "imagen":"images/nicaragua.png"
+    }
+]

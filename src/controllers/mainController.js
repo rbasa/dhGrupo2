@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs");
-const dbProductos = path.join(__dirname, "../database/productos.json");
+let dbProductos = path.join(__dirname, "../database/productos.json");
+let productosEnCarrito = path.join(__dirname, "../database/carrito.json");
 const readJsonFile = (path) => {
   const data = fs.readFileSync(path, "utf-8");
   const dataParse = JSON.parse(data);
@@ -16,7 +17,8 @@ const controller = {
     res.render(path.join("about"));
   },
   cart: (req, res) => {
-    res.render("products/cart");
+    const productosAgregados = readJsonFile(productosEnCarrito);
+    res.render("products/cart", { productos: productosAgregados });
   },
   login: (req, res) => {
     res.render("users/login");

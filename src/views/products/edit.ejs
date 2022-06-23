@@ -2,28 +2,34 @@
 
 <body>
     <%- include("../partials/header") %>
-    <main class="main-edit">
-        <div class="lista">
-            <article class="edit-product">
-                <div class="card-product-edit">
-                    <div class="product_title_edit">
-                        <%= producto.nombre %>
-                    </div>
-                    <div >
-                        <p class="precio_producto_edit"><%= producto.precio %></p>
-                    </div>
-                    <a href="/products">
-                        <div class="imagen_edit">
-                            <img class="img" src= <%= '/'+ producto.imagen %> >
+        <section class="login_full">
+            <div class="edit_page">
+                <div class="center">
+                    <form class="formulario" method="post">
+                        <div class="txt_field">
+                            <input type="text" required>
+                            <label><%= producto.nombre %></label>
                         </div>
-                    </a>
-                    <div class="botones-edit">
-                    <a href="/products/<% producto.id %>/edit"><button><span class="material-symbols-outlined iconos_edit">edit</span></button></a>
-                    <a href="/edit/<% producto.id %>"><button><span class="material-symbols-outlined iconos_edit">delete</span></button></a>
+                        <div class="txt_field">
+                            <input type="text" required>
+                            <label><%= producto.precio %></label>
+                        </div>
+                    </form>
+                    <div class="txt_field_comment">
+                        <textarea class="box_comment" name="descripcion" placeholder="Descripción"></textarea>
                     </div>
-                </div>
-            </article>
-        </div>
+                    
+                    <div class="upload_edit">
+                        <input type="file" id="file" accept="image/*">
+                        <label for="file"> Cargar imagen</label>
+                    </div>
+                        <div class="botones-edit">
+                            <a href="/products/<% producto.id %>/edit"><button><span class="material-symbols-outlined iconos_edit">edit</span></button></a>
+                            <a href="/edit/<% producto.id %>"><button><span class="material-symbols-outlined iconos_edit">delete</span></button></a>
+                        </div>
+                    
+            </div>
+        </section>
     </main>
 </body>
 </html>

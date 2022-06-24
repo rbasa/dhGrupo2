@@ -1,0 +1,19 @@
+<%- include("../partials/head") %>
+
+    <body>
+        <%- include("../partials/header") %>
+        <section class="login_full">
+            <div class="edit_page">
+                <div class="center">
+                    <form class="formulario" method="POST" action="/products/<%= producto.id %>?_method=DELETE">
+                        <div class="botones-edit">
+                            <input type="submit" value="Elimiar Producto">
+                          <!--  <a href="/edit/<% producto.id %>"><button><span class="material-symbols-outlined iconos_edit">delete</span></button></a>-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+

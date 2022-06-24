@@ -48,22 +48,25 @@ const productController = {
     res.redirect('products');
   },
   productsPut: (req, res) => {
-   let productos = readJsonFile(dbProductos);
-   // const id = req.params.id;//
-    //const name = req.body.name;//
-   // const description = req.body.description;//
-   // const price = req.body.price;//
-   // const category = req.body.category;//
-   // productos[id].name = name;//
-   // productos[id].description = description;//
-   // productos[id].price = price;//
-   // productos[id].category = category; //
- 
-    fs.writeFileSync(productos, JSON.stringify(productos, null, 2));
-    res.send("hola");
+    let productos = readJsonFile(dbProductos);
+    const id = req.params.id;
+    const name = req.body.name;
+    const description = req.body.description;
+    const price = req.body.price;
+
+    productos.find(e => e.id == id).nombre = name;
+    productos.find(e => e.id == id).descripcion = description;
+    productos.find(e => e.id == id).precio = price;
+
+    fs.writeFileSync(dbProductos, JSON.stringify(productos, null, 2));
+    res.redirect('/products/' + id);
   },
   productsDelete: (req,res)=>{
-    res.send("soy el delete")
+    const productos = readJsonFile(dbProductos);
+    const id = req.params.id;
+    const newProductList = productos.filter(e => e.id != id);
+    fs.writeFileSync(dbProductos, JSON.stringify(newProductList, null, 2));
+    res.redirect('/products');
   },
   list: (req,res)=>{
     const productos = readJsonFile(dbProductos);

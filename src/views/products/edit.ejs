@@ -1,35 +1,47 @@
 <%- include("../partials/head") %>
 
-<body>
-    <%- include("../partials/header") %>
+    <body>
+        <%- include("../partials/header") %>
         <section class="login_full">
             <div class="edit_page">
                 <div class="center">
-                    <form class="formulario" method="POST" action="?_method:PUT">
+                    <form class="formulario" method="POST" action="/products/<%= producto.id %>?_method=PUT">
                         <div class="txt_field">
-                            <input type="text" required>
-                            <label><%= producto.nombre %></label>
+                            <input type="text" value="<%= producto.nombre %>" name="name" required>
+                            <label>Nombre de Producto</label>
                         </div>
                         <div class="txt_field">
-                            <input type="text" required>
-                            <label><%= producto.precio %></label>
+                            <input type="text" value="<%= producto.precio %>" name="price" required>
+                            <label>Precio</label>
                         </div>
                         <div class="txt_field_comment">
-                            <textarea class="box_comment" name="descripcion" placeholder="Descripción"></textarea>
+                            <textarea class="box_comment" name="description"><%= producto.descripcion %></textarea>
                         </div>
-                    <!--<div class="upload_edit">
+                        <!--<div class="upload_edit">
                         <input type="file" id="file" accept="image/*">
                         <label for="file"> Cargar imagen</label>
                          </div> -->
                         <div class="botones-edit">
                             <input type="submit" value="editar">
-                          <!--  <a href="/edit/<% producto.id %>"><button><span class="material-symbols-outlined iconos_edit">delete</span></button></a>-->
+
                         </div>
-                    
                     </form>
+                </div>
             </div>
         </section>
-    </main>
-</body>
+        <br>
+        <section class="login_full">
+            <div class="edit_page">
+                <div class="center">
+                    <form class="formulario" method="POST" action="/products/<%= producto.id %>?_method=DELETE">
+                        <div class="botones-edit">
+                            <input type="submit" value="Elimiar Producto">
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
 

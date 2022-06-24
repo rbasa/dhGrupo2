@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nombre": "Café Colombia",
-    "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
+    "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media.",
     "precio": "$700",
     "categoria": "cafe",
     "imagen": "images/colombia.png"
@@ -10,15 +10,15 @@
   {
     "id": 2,
     "nombre": "Café Nicaragua",
-    "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
-    "precio": "$701",
+    "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media.",
+    "precio": "$777",
     "categoria": "cafe",
     "imagen": "images/nicaragua.png"
   },
   {
     "id": 3,
     "nombre": "Café Kenya",
-    "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
+    "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media.",
     "precio": "$702",
     "categoria": "cafe",
     "imagen": "images/kenya.png"
@@ -26,8 +26,8 @@
   {
     "id": 4,
     "nombre": "Café Brasil",
-    "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media. ",
-    "precio": "$703",
+    "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media.",
+    "precio": "$777",
     "categoria": "cafe",
     "imagen": "images/brasil.png"
   },
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "nombre": "Remera blanca",
-    "descripcion": "talle único - algodon ",
+    "descripcion": "talle único - algodon",
     "precio": "$900",
     "categoria": "accesorio",
     "imagen": "images/shirt_logo.png"
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "nombre": "Termo blanco",
-    "descripcion": "vaso térmico-capacidad 500cc-acero inoxidable ",
+    "descripcion": "vaso térmico-capacidad 500cc-acero inoxidable",
     "precio": "$1500",
     "categoria": "accesorios",
     "imagen": "images/termo_blanco_logo.png"
@@ -153,7 +153,7 @@
   },
   {
     "id": 20,
-    "nombre": "espumador de cafe ",
+    "nombre": "espumador de cafe",
     "descripcion": "espumador",
     "precio": "$750",
     "categoria": "accsesorios",
@@ -161,9 +161,10 @@
   },
   {
     "id": 21,
-    "nombre": "sdfdasfds",
-    "description": "dsfds",
-    "price": "20000",
-    "category": "dsfdsf"
+    "nombre": "espumador para eliminar",
+    "descripcion": "articulo de prueba para poder eliminar",
+    "precio": "$750",
+    "categoria": "accsesorios",
+    "imagen": "images/brasil.png"
   }
 ]

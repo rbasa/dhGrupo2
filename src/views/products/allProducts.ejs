@@ -1,0 +1,26 @@
+<%- include("../partials/head") %>
+    <body>
+        <%-include("../partials/header")%>
+        <h3 class="subtitulos">Nuestros productos</h3>
+            <div class="lista">
+                <% productos.forEach(e => { %> 
+                <article>
+                    <div class="card">
+                        <div class="product_title">
+                            <%= e.nombre %>
+                        </div>
+                        <a href="/products/product/<%= e.id %>">
+                            <div class="imagenes_home">
+                                <img class="img" src= <%= e.imagen %> >
+                            </div>
+                        </a>
+                        <div >
+                            <p class="description_producto"><%= e.descripcion %></p>
+                            <p class="precio_producto"><%= e.precio %></p>
+                        </div>
+                    </div>
+                </article>
+            <% }) %>
+            </div>
+    </body>
+</html>

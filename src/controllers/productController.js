@@ -8,7 +8,7 @@ const readJsonFile = (path) => {
 };
 
 const productController = {
-  products: (req, res) => {
+  allProducts: (req, res) => {
    const productos = readJsonFile(dbProductos);
     const id = req.params.id;
     const producto = productos.find(el => el.id == id) ? productos.find(el => el.id == id) : res.send("el producto no existe")
@@ -24,46 +24,50 @@ const productController = {
   productsEdit: (req, res) => {
     const productos = readJsonFile(dbProductos);
     const id = req.params.id;
-    const producto = productos[id-1];
+    const producto = productos.find(e => e.id==id);
     res.render("products/edit", { producto: producto });
   },
   productsNew: (req, res) =>{
     const productos = readJsonFile(dbProductos);
-    const id = productos[productos.length].id + 1;
+    const id = productos.length + 1;
     const name = req.body.name;
     const description = req.body.description;
     const price = req.body.price;
     const category = req.body.category;
-    
+    const image= productos[0].imagen;
     const nuevoProducto = {
         'id': id,
-        'name': name,
+        'nombre': name,
         'description': description,
         'price': price,
         'category': category,
-        'image': image
+        'imagen': image
     };
     productos.push(nuevoProducto)
     fs.writeFileSync(dbProductos, JSON.stringify(productos, null, 2))
-    res.render('products/products');
+    res.redirect('products');
   },
   productsPut: (req, res) => {
-    const productos = readJsonFile(dbProductos);
-    const id = req.params.id;
-    const name = req.body.name;
-    const description = req.body.description;
-    const price = req.body.price;
-    const category = req.body.category;
-    productos[id].name = name;
-    productos[id].description = description;
-    productos[id].price = price;
-    productos[id].category = category;
-    
-    fs.writeFileSync(dbProductos, JSON.stringify(productos, null, 2));
-    res.render("products/products", { id: id });
+   let productos = readJsonFile(dbProductos);
+   // const id = req.params.id;//
+    //const name = req.body.name;//
+   // const description = req.body.description;//
+   // const price = req.body.price;//
+   // const category = req.body.category;//
+   // productos[id].name = name;//
+   // productos[id].description = description;//
+   // productos[id].price = price;//
+   // productos[id].category = category; //
+ 
+    fs.writeFileSync(productos, JSON.stringify(productos, null, 2));
+    res.send("hola");
   },
   productsDelete: (req,res)=>{
     res.send("soy el delete")
-  }
+  },
+  list: (req,res)=>{
+    const productos = readJsonFile(dbProductos);
+    res.render("products/allProducts", { productos: productos });
+  },
 };
 module.exports = productController;

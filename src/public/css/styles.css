@@ -142,6 +142,12 @@ font-size: 0.6rem;
   color: black;
 }
 
+.plus-card{
+height: 100px;
+width: 70px;
+border: solid black 1px;
+}
+
 .container {
   position: absolute;
   top: 30%;
@@ -156,7 +162,13 @@ h1{
   font-weight: 100;
   margin-bottom: 0.5rem;
 }
-
+.add-circle{
+display: flex;
+color: black;
+font-size: 5rem;
+justify-content: center;
+margin: 30px;
+}
 .cen{
   font-size: 0.5rem;
   font-family: 'Poppins', sans-serif;

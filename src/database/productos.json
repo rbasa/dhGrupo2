@@ -11,7 +11,7 @@
     "id": 2,
     "nombre": "Café Nicaragua",
     "descripcion": "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical, cuerpo y acidez media.",
-    "precio": "$777",
+    "precio": "$702",
     "categoria": "cafe",
     "imagen": "images/nicaragua.png"
   },
@@ -155,14 +155,6 @@
     "id": 20,
     "nombre": "espumador de cafe",
     "descripcion": "espumador",
-    "precio": "$750",
-    "categoria": "accsesorios",
-    "imagen": "images/brasil.png"
-  },
-  {
-    "id": 21,
-    "nombre": "espumador para eliminar",
-    "descripcion": "articulo de prueba para poder eliminar",
     "precio": "$750",
     "categoria": "accsesorios",
     "imagen": "images/brasil.png"

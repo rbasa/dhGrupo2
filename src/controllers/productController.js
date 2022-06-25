@@ -31,14 +31,14 @@ const productController = {
   },
   productsNew: (req, res) =>{
     const productos = readJsonFile(dbProductos);
-    const id = productos.length + 1;
+    const idNuevo = Date.now();
     const name = req.body.name;
     const description = req.body.description;
     const price = req.body.price;
     const category = req.body.category;
-    const image= productos[0].imagen;
+    const image = productos[0].imagen;
     const nuevoProducto = {
-        'id': id,
+        'id': idNuevo,
         'nombre': name,
         'description': description,
         'price': price,

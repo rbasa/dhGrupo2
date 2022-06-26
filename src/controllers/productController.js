@@ -1,10 +1,10 @@
-const path = require("path");
-const fs = require("fs");
+const path = require('path');
+const fs = require('fs');
 
 
-const dbProductos = path.join(__dirname, "../database/productos.json");
+const dbProductos = path.join(__dirname, '../database/productos.json');
 const readJsonFile = (path) => {
-    const data = fs.readFileSync(path, "utf-8");
+    const data = fs.readFileSync(path, 'utf-8');
     const dataParse = JSON.parse(data);
     return dataParse;
 };
@@ -13,21 +13,21 @@ const productController = {
   allProducts: (req, res) => {
    const productos = readJsonFile(dbProductos);
     const id = req.params.id;
-    const producto = productos.find(el => el.id == id) ? productos.find(el => el.id == id) : res.send("el producto no existe")
-    res.render("products/products", {producto: producto});
+    const producto = productos.find(el => el.id == id) ? productos.find(el => el.id == id) : res.send('el producto no existe')
+    res.render('products/products', {producto: producto});
   },
   productsCreate: (req, res) => {
-    res.render("products/create");
+    res.render('products/create');
   },
   productsId: (req, res) => {
     const id = req.params.id;
-    res.render("products/", { id: id });
+    res.render('products/', { id: id });
   },
   productsEdit: (req, res) => {
     const productos = readJsonFile(dbProductos);
     const id = req.params.id;
     const producto = productos.find(e => e.id==id);
-    res.render("products/edit", { producto: producto });
+    res.render('products/edit', { producto: producto });
   },
   productsNew: (req, res) =>{
     const productos = readJsonFile(dbProductos);
@@ -76,7 +76,7 @@ const productController = {
   },
   list: (req,res)=>{
     const productos = readJsonFile(dbProductos);
-    res.render("products/allProducts", { productos: productos });
+    res.render('products/allProducts', { productos: productos });
   },
 };
 module.exports = productController;

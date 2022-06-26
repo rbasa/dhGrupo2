@@ -6,7 +6,7 @@
         <section class="login_full">
             <div class="center">
                 <div class="center">
-                <form class="formulario" method="post" action="/products">
+                <form class="formulario" method = "post" action = "/products" enctype = "multipart/form-data">
                     <h2>Crear producto</h2>
                     <div class="txt_field">
                         <input name="name" type="text" required>
@@ -28,10 +28,10 @@
                         <span></span>
                         <label>Precio</label>
                     </div>
-                <!--    <div class="upload">
-                        <input type="file" id="file" accept="image/*">
+                   <div class="upload">
+                        <input type="file" id="file" accept="image/*" name ="imagen-producto">
                         <label for="file"> Cargar imagen</label>
-                    </div> -->
+                    </div>
                     <input type="submit" value="Crear producto">            
                 </form>
             </div>

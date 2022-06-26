@@ -36,7 +36,7 @@ const productController = {
     const description = req.body.description;
     const price = req.body.price;
     const category = req.body.category;
-    const image = productos[0].imagen;
+    const image = req.file ? 'images/' + req.file.filename : 'images/foto-vacia';
     const nuevoProducto = {
         'id': idNuevo,
         'nombre': name,
@@ -55,15 +55,19 @@ const productController = {
     const name = req.body.name;
     const description = req.body.description;
     const price = req.body.price;
+    const image = req.file ? 'images/' + req.file.filename : false;
+
 
     productos.find(e => e.id == id).nombre = name;
     productos.find(e => e.id == id).descripcion = description;
     productos.find(e => e.id == id).precio = price;
+    image ? productos.find(e => e.id == id).imagen = image : edicionImage = false;
 
     fs.writeFileSync(dbProductos, JSON.stringify(productos, null, 2));
     res.redirect('/products/' + id);
   },
   productsDelete: (req,res)=>{
+    // falta elimianar la imagen del fs
     const productos = readJsonFile(dbProductos);
     const id = req.params.id;
     const newProductList = productos.filter(e => e.id != id);

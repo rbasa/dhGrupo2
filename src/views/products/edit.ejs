@@ -4,7 +4,7 @@
         <%- include("../partials/header") %>
         <section class="edit-main-page">
             <div class="edit_page">
-                    <form class="formulario" method="POST" enctype="multipart/form-data" action="/products/<%= producto.id %>?_method=PUT">
+                    <form class="formulario" method="POST" action="/products/<%= producto.id %>?_method=PUT" enctype = "multipart/form-data">
                         <div class="txt_field">
                             <input type="text" value="<%= producto.nombre %>" name="name" required>
                             <label>Nombre de Producto</label>
@@ -17,8 +17,8 @@
                             <textarea class="box_comment" name="description"><%= producto.descripcion %></textarea>
                         </div>
                         <div class="upload_edit">
-                        <input type="file" id="file" accept="image/*" name="imagen-producto">
-                        <label for="file"> Cargar imagen</label>
+                            <input type="file" id="file" accept="image/*" name="imagen-producto">
+                            <label for="file"> Cargar imagen</label>
                         </div>
                         <div class="botones-edit">
                             <input type="submit" value="confirmar edición">

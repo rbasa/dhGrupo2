@@ -7,23 +7,28 @@
                 <div class="center">
                 <form class="formulario" method = "post" action = "/products" enctype = "multipart/form-data">
                     <h2>Crear producto</h2>
+                    <% if(locals.errors) { %>
+                        <% errors.forEach(error => { %>
+                            <p><%= error.msg %></p>
+                        <% }); %>
+                    <% }; %>
                     <div class="txt_field">
-                        <input name="name" type="text" required>
+                        <input name="name" type="text" value="<%= locals.old && old.name ? old.name : '' %>">
                         <span></span>
                         <label>Nombre</label>
                     </div>
                     <div class="txt_field">
-                        <input name="category" type="text" required>
+                        <input name="category" type="text" value="<%= locals.old && old.category ? old.category : '' %>">
                         <span></span>
                         <label>Clase</label>
                     </div>
                     <div class="txt_field">
-                        <input name="description" type="text" required>
+                        <input name="description" type="text" value="<%= locals.old && old.description ? old.description : '' %>">
                         <span></span>
                         <label>Descripción</label>
                     </div>
                     <div class="txt_field">
-                        <input name="price" type="text" required>
+                        <input name="price" type="text" value="<%= locals.old && old.price ? old.price : '' %>">
                         <span></span>
                         <label>Precio</label>
                     </div>

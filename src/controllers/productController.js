@@ -1,8 +1,8 @@
 const path = require('path');
 const fs = require('fs');
-
-
+const { validationResult } = require('express-validator');
 const dbProductos = path.join(__dirname, '../database/productos.json');
+
 const readJsonFile = (path) => {
     const data = fs.readFileSync(path, 'utf-8');
     const dataParse = JSON.parse(data);
@@ -11,7 +11,7 @@ const readJsonFile = (path) => {
 
 const productController = {
   allProducts: (req, res) => {
-   const productos = readJsonFile(dbProductos);
+    const productos = readJsonFile(dbProductos);
     const id = req.params.id;
     const producto = productos.find(el => el.id == id) ? productos.find(el => el.id == id) : res.send('el producto no existe')
     res.render('products/products', {producto: producto});
@@ -19,35 +19,36 @@ const productController = {
   productsCreate: (req, res) => {
     res.render('products/create');
   },
-  productsId: (req, res) => {
-    const id = req.params.id;
-    res.render('products/', { id: id });
-  },
   productsEdit: (req, res) => {
     const productos = readJsonFile(dbProductos);
     const id = req.params.id;
     const producto = productos.find(e => e.id==id);
     res.render('products/edit', { producto: producto });
   },
-  productsNew: (req, res) =>{
-    const productos = readJsonFile(dbProductos);
-    const idNuevo = Date.now();
-    const name = req.body.name;
-    const description = req.body.description;
-    const price = req.body.price;
-    const category = req.body.category;
-    const image = req.file ? 'images/' + req.file.filename : 'images/foto-vacia';
-    const nuevoProducto = {
-        'id': idNuevo,
-        'nombre': name,
-        'description': description,
-        'price': price,
-        'category': category,
-        'imagen': image
-    };
-    productos.push(nuevoProducto)
-    fs.writeFileSync(dbProductos, JSON.stringify(productos, null, 2))
-    res.redirect('products');
+  productsNew: (req, res) => {
+    let errors = validationResult(req);
+    if(errors.isEmpty()){
+      const productos = readJsonFile(dbProductos);
+      const idNuevo = Date.now();
+      const name = req.body.name;
+      const description = req.body.description;
+      const price = req.body.price;
+      const category = req.body.category;
+      const image = req.file ? 'images/' + req.file.filename : 'images/foto-vacia';
+      const nuevoProducto = {
+          'id': idNuevo,
+          'nombre': name,
+          'description': description,
+          'price': price,
+          'category': category,
+          'imagen': image
+      };
+      productos.push(nuevoProducto)
+      fs.writeFileSync(dbProductos, JSON.stringify(productos, null, 2))
+      res.redirect('products');
+    }else{
+      res.render('products/create', { errors: errors.array(), old: req.body });
+    }
   },
   productsPut: (req, res) => {
     let productos = readJsonFile(dbProductos);
@@ -56,7 +57,6 @@ const productController = {
     const description = req.body.description;
     const price = req.body.price;
     const image = req.file ? 'images/' + req.file.filename : false;
-
 
     productos.find(e => e.id == id).nombre = name;
     productos.find(e => e.id == id).descripcion = description;

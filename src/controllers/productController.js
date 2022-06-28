@@ -4,26 +4,25 @@ const { validationResult } = require('express-validator');
 const dbProductos = path.join(__dirname, '../database/productos.json');
 
 const readJsonFile = (path) => {
-    const data = fs.readFileSync(path, 'utf-8');
-    const dataParse = JSON.parse(data);
-    return dataParse;
+  const data = fs.readFileSync(path, 'utf-8');
+  const dataParse = JSON.parse(data);
+  return dataParse;
 };
-
 const productController = {
   allProducts: (req, res) => {
-    const productos = readJsonFile(dbProductos);
-    const id = req.params.id;
-    const producto = productos.find(el => el.id == id) ? productos.find(el => el.id == id) : res.send('el producto no existe')
-    res.render('products/products', {producto: producto});
+  const productos = readJsonFile(dbProductos);
+  const id = req.params.id;
+  const producto = productos.find(el => el.id == id) ? productos.find(el => el.id == id) : res.send('el producto no existe')
+  res.render('products/products', {producto: producto});
   },
   productsCreate: (req, res) => {
     res.render('products/create');
   },
   productsEdit: (req, res) => {
-    const productos = readJsonFile(dbProductos);
-    const id = req.params.id;
-    const producto = productos.find(e => e.id==id);
-    res.render('products/edit', { producto: producto });
+  const productos = readJsonFile(dbProductos);
+  const id = req.params.id;
+  const producto = productos.find(e => e.id==id);
+  res.render('products/edit', { producto: producto });
   },
   productsNew: (req, res) => {
     let errors = validationResult(req);
@@ -36,18 +35,21 @@ const productController = {
       const category = req.body.category;
       const image = req.file ? 'images/' + req.file.filename : 'images/foto-vacia';
       const nuevoProducto = {
-          'id': idNuevo,
-          'nombre': name,
-          'description': description,
-          'price': price,
-          'category': category,
-          'imagen': image
+        'id': idNuevo,
+        'nombre': name,
+        'description': description,
+        'price': price,
+        'category': category,
+        'imagen': image
       };
+    //   <% if (locals.errors && errors.imagenProducto) { %>
+    //     <div ><%= errors.imagenProducto.msg %> </div>
+    // <% } %>
       productos.push(nuevoProducto)
       fs.writeFileSync(dbProductos, JSON.stringify(productos, null, 2))
       res.redirect('products');
     }else{
-      res.render('products/create', { errors: errors.array(), old: req.body });
+      res.render('products/create', { errors: errors.mapped(), old: req.body });
     }
   },
   productsPut: (req, res) => {

@@ -12,11 +12,10 @@ const readJsonFile = (path) => {
 const controller = {
   index: (req, res) => {
     const productos = readJsonFile(dbProductos);
-    // res.send(productos);
-    res.render('home', { productos: productos });
+    return res.render('home', { productos: productos });
   },
   about: (req, res) => {
-    res.render(path.join('about'));
+    return res.render(path.join('about'));
   },
   cart: (req, res) => {
     const seleccionados = readJsonFile(dbCart);
@@ -24,16 +23,7 @@ const controller = {
     seleccionados.forEach(e => {
       total = total + e.precio*e.cantidad;
     })
-    res.render('products/cart',{ seleccionados: seleccionados, total: total });
-  },
-  login: (req, res) => {
-    res.render('users/login');
-  },
-  register: (req, res) => {
-    res.render('users/register');
-  },
-  create: (req, res) => {
-    res.render('/create');
-  },
+    return res.render('products/cart',{ seleccionados: seleccionados, total: total });
+  }
 };
 module.exports = controller;

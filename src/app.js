@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 8080;
-const mainRoutes = require('./routes/mainRoutes')
-const productRoutes = require('./routes/productRoutes')
+const mainRoutes = require('./routes/mainRoutes');
+const productRoutes = require('./routes/productRoutes');
+const userRoutes = require('./routes/userRoutes');
 const path = require('path');
 const methodOverride = require('method-override');
 
@@ -19,6 +20,5 @@ app.listen(PORT, ()=>{
 
 app.use('/', mainRoutes);
 app.use('/products', productRoutes);
-app.use('/login', mainRoutes);
-app.use('/register', mainRoutes);
+app.use('/users', userRoutes);
 app.use('/cart', mainRoutes);

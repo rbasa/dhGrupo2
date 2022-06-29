@@ -3,47 +3,39 @@
 <body>
 <%-include("../partials/header")%>
     <main>
-                <section class="login_full">
-
-           
+        <section class="login_full">           
             <div>
                 <h2>Registrate</h2>  
-            <div class="center">
-                <form class="formulario" method="post">
-                    <div class="txt_field">
-                        <input type="text" required>
-                        <span></span>
-                        <label>Crear usuario</label>
-                    </div>
-                    <div class="txt_field">
-                        <input type="password" required>
-                        <span></span>
-                        <label>Email</label>
-                    </div>
-                    <div class="txt_field">
-                        <input type="password" required>
-                        <span></span>
-                        <label>Contraseña</label>
-                    </div>
-                    <div class="txt_field">
-                        <input type="password" required>
-                        <span></span>
-                        <label>Repetir contrasña</label>
-                    </div>  
-                    <input type="submit" value="Registrarme">
-                    <div class="link_de_inicio">
-                       Ya sos miembro? <a href="/login">Inicia sesión</a>
-                    </div>
+                <div class="center">
+                    <form class="formulario" method="post" action = "/users/register" >
+                        <div class="txt_field">
+                            <input type="text" name="name" required>
+                            <span></span>
+                            <label>Crear usuario</label>
+                        </div>
+                        <div class="txt_field">
+                            <input type="email" name="email"required>
+                            <span></span>
+                            <label>Email</label>
+                        </div>
+                        <div class="txt_field">
+                            <input type="password" name="password"required>
+                            <span></span>
+                            <label>Contraseña</label>
+                        </div>
+                        <div class="txt_field">
+                            <input type="password" required>
+                            <span></span>
+                            <label>Repetir contrasña</label>
+                        </div>  
+                        <input type="submit" value="Registrarme">
+                        <div class="link_de_inicio">
+                        Ya sos miembro? <a href="/login">Inicia sesión</a>
+                        </div>
+                    </form>
                 </div>
-                </form>
-
-        </div>
-
-        </section>
-                </form>
             </div>
         </section>
     </main>
-
 </body>
 </html>

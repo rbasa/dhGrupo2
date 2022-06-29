@@ -2,10 +2,6 @@ const { check } = require('express-validator');
 const path = require('path');
 
 const formValidations = [
-    // name
-    // price
-    // description
-    // imagen-producto
     check('name')
     .notEmpty().withMessage('debes comlpetar el campo nombre'),
     check('category')

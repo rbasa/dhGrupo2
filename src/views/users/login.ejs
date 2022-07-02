@@ -9,10 +9,13 @@
                 <h2>Inicia sesión</h2>  
             <div class="center">
                 <form method="post">
+                    <% if (locals.errors && errors.login) { %>
+                        <div><%= errors.login.msg %> </div>
+                    <% } %>
                     <div class="txt_field">
-                        <input type="text" required>
+                        <input type="text" name ="email" required>
                         <span></span>
-                        <label>Usuario</label>
+                        <label>Email</label>
                     </div>
                     <div class="txt_field">
                         <input type="password" required>

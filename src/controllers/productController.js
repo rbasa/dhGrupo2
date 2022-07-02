@@ -21,7 +21,7 @@ const productController = {
   productsEdit: (req, res) => {
     const productos = readJsonFile(dbProductos);
     const id = req.params.id;
-    const producto = productos.find(e => e.id==id);
+    const producto = productos.find(e => e.id == id);
     return res.render('products/edit', { producto: producto });
   },
   productsNew: (req, res) => {

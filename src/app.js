@@ -6,7 +6,17 @@ const productRoutes = require('./routes/productRoutes');
 const userRoutes = require('./routes/userRoutes');
 const path = require('path');
 const methodOverride = require('method-override');
+const session = require('express-session');
+const userLogged = require('./middlewares/userLogged');
+const cookies = require('cookie-parser');
 
+app.use(session({
+    secret: 'es un secreo',
+    resave: false,
+    saveUninitialized: false
+}));
+app.use(userLogged);
+app.use(cookies());
 app.use(express.json());
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: false }));

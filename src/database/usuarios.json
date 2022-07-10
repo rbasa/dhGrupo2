@@ -15,65 +15,18 @@
  },
  {
   "id": 3,
-  "username": "Melamie",
-  "email": "mdradey2@skype.com",
-  "password": "pIjye1iknhU",
+  "name": "rodrigo",
+  "email": "asd@asd.com",
+  "password": "$2a$10$NLIPWpoOrpj7Zu2CJPLGx.dXka4q4pxgKlMjGHVDaL4EkVS40NUYO",
+  "passwordConfirmation": true,
   "category": "user"
  },
  {
   "id": 4,
-  "username": "Alphonso",
-  "email": "aborrett3@oakley.com",
-  "password": "tBhRocMQaO1",
-  "category": "user"
- },
- {
-  "id": 5,
-  "username": "Shelby",
-  "email": "sdieton4@shop-pro.jp",
-  "password": "APCzvd3eI",
-  "category": "user"
- },
- {
-  "id": 6,
-  "username": "Etan",
-  "email": "elackney5@theguardian.com",
-  "password": "yVmyjmrStqb1",
-  "category": "user"
- },
- {
-  "id": 7,
-  "username": "Rex",
-  "email": "rcollington6@seesaa.net",
-  "password": "7RwCyoo",
-  "category": "user"
- },
- {
-  "id": 8,
-  "username": "Jone",
-  "email": "jspedding7@over-blog.com",
-  "password": "yuEFw5GSjUoe",
-  "category": "user"
- },
- {
-  "id": 9,
-  "username": "Tremain",
-  "email": "ttremaine8@china.com.cn",
-  "password": "HEBDm5",
-  "category": "user"
- },
- {
-  "id": 10,
-  "username": "Ulric",
-  "email": "ubrill9@technorati.com",
-  "password": "lm1V5fjC",
-  "category": "user"
- },
- {
-  "id": 11,
-  "username": "Westbrook",
-  "email": "wgrishkova@phpbb.com",
-  "password": "yKuetl1",
+  "name": "rodr",
+  "email": "qwe@qwe.com",
+  "password": "$2a$10$8dx2aY0RgheGir7Xx5Q.o.zXTfPkSX39u.pBKqi7v8mwq.CFJ9RRS",
+  "passwordConfirmation": true,
   "category": "user"
  }
 ]

@@ -15,8 +15,8 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }));
-app.use(userLogged);
 app.use(cookies());
+app.use(userLogged);
 app.use(express.json());
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: false }));

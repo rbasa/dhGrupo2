@@ -7,7 +7,7 @@
             <div>
                 <h2>Registrate</h2>  
                 <div class="center">
-                    <form class="formulario" method="post" action = "/users/register" >
+                    <form class="formulario" method="POST" action = "/users/register" enctype="multipart/form-data">
                         <div class="txt_field">
                             <input type="text" name="name"value="<%= locals.old && old.name ? old.name : '' %>">
                             <span></span>
@@ -36,7 +36,11 @@
                             <input type="password" name ="passwordConfirmation" >
                             <span></span>
                             <label>Repetir contrasña</label>
-                        </div>  
+                        </div>
+                        <div class="upload">
+                          <input type="file" id="file" name ="imagenUsuario">
+                          <label for="file"> Cargar imagen</label>
+                        </div>
                         <input type="submit" value="Registrarme">
                         <div class="link_de_inicio">
                         Ya sos miembro? <a href="/users/login">Inicia sesión</a>

@@ -6,7 +6,7 @@
             <li><a href="/"><span class="material-symbols-outlined menu burger">menu</span></a></li>
             <li><a href="/cart"><span class="material-symbols-outlined menu navs">shopping_cart</span></a></li>
             <% if (locals.isLogged) { %>
-                <li><a href="/users/profile">hola <%= locals.userLogged.name %> </a></li>
+                <li><a href="/users/profile"><span class="material-symbols-outlined menu navs">person</span></a></li>
             <% } else { %>
                 <li><a href="/users/login"><span class="material-symbols-outlined menu navs">person</span></a></li>
             <% } %>

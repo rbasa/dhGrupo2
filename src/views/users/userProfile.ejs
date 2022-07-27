@@ -2,8 +2,24 @@
 
 <body>
 <%-include("../partials/header")%>
-hola usuario
-<%= user.name %> 
-<%= user.email %> 
-<%= user.category %> 
+<main>
+  <section class="login_full">           
+      <div>
+          <div class="center">
+              <form class="formulario" method="post" action = "/users/register" >
+                  <div class="txt_field">
+                    <label>Bienvenido <%= user.name %></label>
+                  </div>
+                  <div class="txt_field">
+                    <label>Estas registrado con el email <%= user.email %></label>
+                  </div>
+                  <div class="txt_field">
+                    <label>Estas registrado con el email <%= user.category %></label>
+                  </div>
+                  
+              </form>
+          </div>
+      </div>
+  </section>
+</main>
 </body>

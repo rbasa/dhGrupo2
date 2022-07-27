@@ -37,10 +37,10 @@ const controller = {
         }
 
         const newUser = {
-            ...req.body,
-            password: bcrypt.hashSync(req.body.password, 10),
-            passwordConfirmation: true,
-            category: "user"
+          ...req.body,
+          password: bcryptjs.hashSync(req.body.password, 10),
+          passwordConfirmation: true,
+          category: "user"
         }
         User.create(newUser)
         return res.redirect('/users/login');

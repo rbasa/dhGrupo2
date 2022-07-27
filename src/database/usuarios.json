@@ -1,31 +1,23 @@
 [
  {
   "id": 1,
-  "username": "Edie",
-  "email": "ekarlqvist0@wikipedia.org",
-  "password": "ZrHeTP",
+  "name": "rodrigo",
+  "email": "asd@asd.com",
+  "password": "$2a$10$NLIPWpoOrpj7Zu2CJPLGx.dXka4q4pxgKlMjGHVDaL4EkVS40NUYO",
   "category": "user"
  },
  {
   "id": 2,
-  "username": "Zacherie",
-  "email": "zsauter1@reuters.com",
-  "password": "Ngd2VV05P",
+  "name": "rodri",
+  "email": "qwe@qwe.com",
+  "password": "$2a$10$8dx2aY0RgheGir7Xx5Q.o.zXTfPkSX39u.pBKqi7v8mwq.CFJ9RRS",
   "category": "user"
  },
  {
   "id": 3,
   "name": "rodrigo",
-  "email": "asd@asd.com",
-  "password": "$2a$10$NLIPWpoOrpj7Zu2CJPLGx.dXka4q4pxgKlMjGHVDaL4EkVS40NUYO",
-  "passwordConfirmation": true,
-  "category": "user"
- },
- {
-  "id": 4,
-  "name": "rodr",
-  "email": "qwe@qwe.com",
-  "password": "$2a$10$8dx2aY0RgheGir7Xx5Q.o.zXTfPkSX39u.pBKqi7v8mwq.CFJ9RRS",
+  "email": "momom@sad.com",
+  "password": "$2a$10$pH9nLsPYO77tDcai0JQjiuL0AHvS/Gig0RgmoE6GlJZLVHwY7PD.O",
   "passwordConfirmation": true,
   "category": "user"
  }

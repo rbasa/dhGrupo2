@@ -1,0 +1,22 @@
+insert into products (id,   name,   email,   password,   user_category)
+values
+  (1, "Café Colombia", "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical,  cuerpo y acidez media.", 700, "cafe", "images/colombia.png"),
+  (2, "Café Nicaragua", "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical,  cuerpo y acidez media.", 70, "cafe", "images/nicaragua.png"),
+  (3, "Café Kenya", "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical,  cuerpo y acidez media.", 702, "cafe", "images/kenya.png"),
+  (4, "Café Brasil", "Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical,  cuerpo y acidez media.", 777, "cafe", "images/brasil.png"),
+  (5, "Remera negra", "talle único ", 900, "accesorios", "images/remera_negra.png"),
+  (6, "Remera blanca", "talle único - algodon", 900, "accesorio", "images/shirt_logo.png"),
+  (7, "Termo blanco", "vaso térmico-capacidad 500cc-acero inoxidable", 1500, "accesorios", "images/termo_blanco_logo.png"),
+  (8, "Termo naranja", "vaso térmico-capacidad 500cc-acero inoxidable", 1500, "accesorios", "images/termo_naranja_logo.png"),
+  (9, "Termo negro", "vaso térmico-capacidad 500cc-acero inoxidable", 1500, "accesorios", "images/termo_negro_2_logo.png"),
+  (10, "Termo metal", "vaso térmico-capacidad 500cc-acero inoxidable", 1500, "indumentaria", "images/termo_negro_logo.png"),
+  (11, "Llavero JavaCafé", "Todas tus llaves en un solo lugar", 602, "accesorio", "images/kenya.png"),
+  (12, "Cafetera JavaCafé", "Cafetera automática para que disfrutes tu café ni bien te", 4900, "cafetera", "images/brasil.png"),
+  (13, "Cafetera espresso", "2L de capacidad,  metalica potencia de 850W", 12500, "cafetera", "images/brasil.png"),
+  (14, "Cafetera para capsulas ", "tiene filtro permanente,  potencia de 1500W,  incluye bandeja recolectora", 22000, "cafeteras", "images/brasil.png"),
+  (15, "Vaso termico de la marca", "Vaso de 500ml", 2000, "accesorios", "images/brasil.png"),
+  (16, "buzo de la marca ", "Disponibles en talles  L XL", 4900, "indumentaria", "images/brasil.png"),
+  (17, "Gorra de la marca", "Talle unico ", 500, "indumentaria", "images/colombia.png"),
+  (18, "Bandeja desayunadora", "Dimensiones: 20x30cm", 1000, "accesorios", "images/brasil.png"),
+  (19, "Calcomania", "Logo de la marca", 150, "accesorios", "images/brasil.png"),
+  (20, "espumador de cafe", "espumador", 750, "accsesorios", "images/brasil.png")

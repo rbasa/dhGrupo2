@@ -1,5 +1,5 @@
-module.exports = (sequelize, dataTypes) => {
-  const Product = sequelize.define('Products', {
+module.exports = function(sequelize, dataTypes){
+  const Product = sequelize.define('Product', {
     id: {
       type: dataTypes.INTEGER,
       primaryKey: true,
@@ -27,6 +27,11 @@ module.exports = (sequelize, dataTypes) => {
     tableName: "products",
     timestamps: false
   });
-
+  Product.associate = function(models){
+    Product.belongsTo(models.Product_category, {
+      as: "category",
+      foreginKey: product_category_id
+    })
+  }
   return Product
 }

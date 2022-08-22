@@ -13,8 +13,7 @@ const readJsonFile = (path) => {
 
 const controller = {
     register: (req, res) => {
-
-        return res.render('users/register');
+      return res.render('users/register');
     },
     processRegister: (req, res) => {
         const resultValidation = validationResult(req)
@@ -50,43 +49,43 @@ const controller = {
         return res.render('users/login');
     },
     loginProcess: (req, res) => {
-        let userToLogin = User.findByField('email', req.body.email);
-        if (!userToLogin) {
-            return res.render('users/login', {
-                errors: {
-                    login: {
-                        msg: 'Las credenciales son inválidas'
-                    }
+      let userToLogin = User.findByField('email', req.body.email);
+      if (!userToLogin) {
+          return res.render('users/login', {
+              errors: {
+                  login: {
+                    msg: 'Las credenciales son inválidas'
+                  }
+              }
+          });
+      }
+      let passwordVerificated = bcryptjs.compareSync(req.body.password, userToLogin.password)
+      if (!passwordVerificated) {
+        return res.render('users/login', {
+            errors: {
+                login: {
+                    msg: 'Las credenciales son inválidas'
                 }
-            });
-        }
-        let passwordVerificated = bcryptjs.compareSync(req.body.password, userToLogin.password)
-        if (!passwordVerificated) {
-            return res.render('users/login', {
-                errors: {
-                    login: {
-                        msg: 'Las credenciales son inválidas'
-                    }
-                }
-            });
-        }
-        delete userToLogin.password;
-        req.session.userLogged = userToLogin;
-        if (req.body.recordar) {
-            res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
-        }
-        return res.redirect('/users/profile')
+            }
+        });
+      }
+      delete userToLogin.password;
+      req.session.userLogged = userToLogin;
+      if (req.body.recordar) {
+          res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+      }
+      return res.redirect('/users/profile')
     },
     profile: (req, res) => {
 		return res.render('users/userProfile', {
 			user: req.session.userLogged
 		});
 	},
-    logout: (req, res) => {
-        res.clearCookie('userEmail');
-        req.session.destroy;
-        res.redirect('/')
-    }
+  logout: (req, res) => {
+    res.clearCookie('userEmail');
+    req.session.destroy;
+    res.redirect('/')
+  }
 };
-  module.exports = controller;
+module.exports = controller;
   

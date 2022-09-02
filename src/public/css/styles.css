@@ -189,7 +189,15 @@ margin: 30px;
 
 }
 
+.error{
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  color: #cb4e05;
+}
 
+.registrate{
+margin-bottom: 50px;
+}
 
 .lista{
   margin-left: 10%;
@@ -332,7 +340,7 @@ justify-content: center;
 
 .center{
 position: absolute;
-margin-top: 50px;
+margin-top: 100px;
 top:25%;
 left: 50%;
 transform: translate(-50%, -50%);
@@ -350,9 +358,6 @@ margin-left: auto;
 margin-right: auto;
 }
 
-
-
-
 .center form{
 padding: 0 10px;
 margin-top: 30px;
@@ -364,7 +369,6 @@ margin-top: 50px;
 justify-content: center;
 display: block;
 }
-
 
 form .txt_field{
 position: relative;
@@ -735,7 +739,13 @@ font-size: 2rem;
 color: #cb4e05;
 }
 
-
+.errores ul{
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  color: #cb4e05;
+  display: block;
+width: 100%;
+}
 
 @media(min-width:460px){
   .club{

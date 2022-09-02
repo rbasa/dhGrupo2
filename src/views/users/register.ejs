@@ -5,19 +5,22 @@
     <main>
         <section class="login_full">           
             <div>
-                <h2>Registrate</h2>  
+                <h2 class="registrate">Registrate</h2>  
                 <div class="center">
-                    <form class="formulario" method="POST" action = "/users/register" enctype="multipart/form-data">
+                    <form class="formulario_usuarios" method="POST" action = "/users/register" enctype="multipart/form-data">
+                        <div class="errores">
+                            <ul></ul>
+                        </div>
                         <div class="txt_field">
-                            <input type="text" name="name"value="<%= locals.old && old.name ? old.name : '' %>">
+                            <input type="text" id="input-nombre" name="name nombre1" value="<%= locals.old && old.name ? old.name : '' %>">
                             <span></span>
                             <label>Usuario</label>
                             <% if (locals.errors && errors.name) { %>
-                                <div ><%= errors.name.msg %> </div>
+                                <div class="error" ><%= errors.name.msg %> </div>
                             <% } %>
                         </div>
                         <div class="txt_field">
-                            <input type="email" name="email" value="<%= locals.old && old.email ? old.email : '' %>">
+                            <input type="email" id="input-mail" name="email" value="<%= locals.old && old.email ? old.email : '' %>">
                             <span></span>
                             <label>Email</label>
                             <% if (locals.errors && errors.email) { %>
@@ -50,5 +53,7 @@
             </div>
         </section>
     </main>
+<script src="../js/script.js">
+</script>
 </body>
 </html>

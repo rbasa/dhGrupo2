@@ -12,7 +12,8 @@
                             <ul></ul>
                         </div>
                         <div class="txt_field">
-                            <input type="text" id="input-nombre" name="name nombre1" value="<%= locals.old && old.name ? old.name : '' %>">
+                            <input type="text" id="input-nombre" name="name" value="<%= locals.old && old.name ? old.name : '' %>">
+                            <div class="dinamic-name-feedback"></div>
                             <span></span>
                             <label>Usuario</label>
                             <% if (locals.errors && errors.name) { %>
@@ -20,7 +21,8 @@
                             <% } %>
                         </div>
                         <div class="txt_field">
-                            <input type="email" id="input-mail" name="email" value="<%= locals.old && old.email ? old.email : '' %>">
+                            <input type="" id="input-mail" name="email" value="<%= locals.old && old.email ? old.email : '' %>">
+                            <div class="dinamic-mail-feedback"></div>
                             <span></span>
                             <label>Email</label>
                             <% if (locals.errors && errors.email) { %>
@@ -28,7 +30,8 @@
                             <% } %>
                         </div>
                         <div class="txt_field">
-                            <input type="password" name="password">
+                            <input type="password" id="inpu-password" name="password">
+                            <div class="dinamic-password-feedback"></div>
                             <span></span>
                             <label>Contraseña</label>
                             <% if (locals.errors && errors.password) { %>
@@ -36,7 +39,8 @@
                             <% } %>
                         </div>
                         <div class="txt_field">
-                            <input type="password" name ="passwordConfirmation" >
+                            <input type="password" id="input-repetir" name ="passwordConfirmation" >
+                            <div class="dinamic-repeat-feedback"></div>
                             <span></span>
                             <label>Repetir contrasña</label>
                         </div>
@@ -53,7 +57,7 @@
             </div>
         </section>
     </main>
-<script src="../js/script.js">
+<script src="../js/register.js">
 </script>
 </body>
 </html>

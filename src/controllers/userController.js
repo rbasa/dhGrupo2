@@ -17,11 +17,12 @@ const controller = {
     },
     processRegister: (req, res) => {
         const resultValidation = validationResult(req)
-        if(resultValidation.errors.length > 0){
-            return res.render('users/register', {
-                errors: resultValidation.mapped(),
-                old : req.body
-            })
+
+        if(!resultValidation.isEmpty){
+          return res.render('users/register', {
+              errors: resultValidation.mapped(),
+              old : req.body
+          })
         }
         userInDB = User.findByField('email', req.body.email);
         if (userInDB) {

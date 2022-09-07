@@ -2,7 +2,7 @@ module.exports = {
   "development": {
     "username": "root",
     "password": "root",
-    "database": "database_development",
+    "database": "java_cafe",
     "host": "127.0.0.1",
     "dialect": "mysql",
     // estamos codeando en mac, entonces no nos sirve el puerto por defecto.

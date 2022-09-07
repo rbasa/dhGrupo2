@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const upload = require('../middlewares/multer');
 const formValidations = require('../middlewares/productFormsValidators');
-const productController = require('../controllers/productControllerSQL');
+const productController = require('../controllers/productController');
 
 router.get('/',productController.list);
 router.get('/create', productController.productsCreate);

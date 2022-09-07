@@ -2,7 +2,6 @@ const path = require('path');
 const fs = require('fs');
 const dbProductos = path.join(__dirname, '../database/productos.json');
 const dbCart = path.join(__dirname, '../database/cart.json');
-const Product = require('../models/Products')
 
 const readJsonFile = (path) => {
   const data = fs.readFileSync(path, 'utf-8');
@@ -11,8 +10,8 @@ const readJsonFile = (path) => {
 };
 
 const controller = {
-  index: async (req, res) => {
-    const productos = await Product.list()
+  index: (req, res) => {
+    const productos = readJsonFile(dbProductos);
     return res.render('home', { productos: productos });
   },
   about: (req, res) => {

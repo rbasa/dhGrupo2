@@ -1,19 +1,16 @@
 <%- include("../partials/head") %>
-
     <body>
         <%-include("../partials/header")%>
-
-
         <main>
             <div class="product">
-            <div class="product_title_edit"><%= producto.nombre %></div>
+            <div class="product_title_edit"><%= producto.name %></div>
 
             <div class="prod-sub">
-                <%= producto.descripcion %>
+                <%= producto.description %>
             </div>
-            <img class="product-image" src="<%= "../../" + producto.imagen %>">
+            <img class="product-image" src="<%= "../../" + producto.image %>">
             <div class="product-bottom">
-                <span class="product-window-price"><%= producto.precio %></span>
+                <span class="product-window-price"><%= producto.price %></span>
                 <div class="cart-quantity-controls">
                     <button>-</button>
                     <input type="number" value="1" readonly />

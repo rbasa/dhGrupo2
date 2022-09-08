@@ -8,17 +8,19 @@
             <div>
                 <h2>Inicia sesión</h2>  
             <div class="center">
-                <form method="post">
+                <form class="formulario_login" method="post">
                     <% if (locals.errors && errors.login) { %>
                         <div class="error"><%= errors.login.msg %> </div>
                     <% } %>
                     <div class="txt_field">
-                        <input type="text" name ="email" required>
+                        <input id="email_login" type="text" name ="email" required>
+                        <div class="dinamic-mail-feedback"></div>
                         <span></span>
                         <label>Email</label>
                     </div>
                     <div class="txt_field">
-                        <input name ="password" type="password" required>
+                        <input id="password_login" name ="password" type="password" required>
+                        <div class="dinamic-password-feedback"></div>
                         <span></span>
                         <label>Contraseña</label>
                     </div>

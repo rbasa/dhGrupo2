@@ -5,11 +5,12 @@
         <section class="login_full">
             <div class="center">
                 <div class="center">
-                <form class="formulario" method = "post" action = "/products" enctype = "multipart/form-data">
+                <form class="formulario_producto" method = "post" action = "/products" enctype = "multipart/form-data">
                     <h2>Crear producto</h2>
    
                     <div class="txt_field">
-                        <input name="name" type="text" value="<%= locals.old && old.name ? old.name : '' %>" >
+                        <input id="nombre_producto" name="name" type="text" value="<%= locals.old && old.name ? old.name : '' %>" >
+                        <div class="dinamic-product-feedback"></div>
                         <!-- Se puede agregar una clase mas a este input si viene un error en este campo (que se recuadre en rojo) -->
                         <span></span>
                         <label>Nombre</label>
@@ -18,7 +19,8 @@
                         <% } %>
                     </div>
                     <div class="txt_field">
-                        <input name="category" type="text" value="<%= locals.old && old.category ? old.category : '' %>">
+                        <input id="categoria_producto" name="category" type="text" value="<%= locals.old && old.category ? old.category : '' %>">
+                        <div class="dinamic-category-feedback"></div>
                         <span></span>
                         <label>Clase</label>
                         <% if (locals.errors && errors.category) { %>
@@ -26,7 +28,8 @@
                         <% } %>
                     </div>
                     <div class="txt_field">
-                        <input name="description" type="text" value="<%= locals.old && old.description ? old.description : '' %>">
+                        <textarea id="descripcion_producto" name="description" type="text" value="<%= locals.old && old.description ? old.description : '' %>">
+                        <div class="dinamic-description-feedback"></div>
                         <span></span>
                         <label>Descripción</label>
                         <% if (locals.errors && errors.description) { %>
@@ -34,7 +37,8 @@
                         <% } %>
                     </div>
                     <div class=<%= locals.errors && errors.price ? "txt_field clase-error-formulario" : "txt_field" %>>
-                        <input name="price" type="text" value="<%= locals.old && old.price ? old.price : '' %>">
+                        <input id="precio_producto" name="price" type="text" value="<%= locals.old && old.price ? old.price : '' %>">
+                        <div class="dinamic-price-feedback"></div>
                         <span></span>
                         <label>Precio</label>
                         <% if (locals.errors && errors.price) { %>

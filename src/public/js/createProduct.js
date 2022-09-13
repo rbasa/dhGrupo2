@@ -1,5 +1,5 @@
 window.addEventListener("load", function(){
-
+  console.log('ook')
   let formulario = document.querySelector("form.formulario_producto");
   let nombreProducto = document.getElementById("nombre_producto");
   let categoriaProducto = document.getElementById("categoria_producto");
@@ -22,7 +22,6 @@ window.addEventListener("load", function(){
   precioProducto.addEventListener('blur', (e)=>{
    !typeof(precioProducto.value) == "number" ? errorPrecio.innerHTML = "El campo precio debe ser numerico" : errorPrecio.innerHTML ="";
   });
-
 
   formulario.addEventListener("submit", function(e){
     let errores = [];

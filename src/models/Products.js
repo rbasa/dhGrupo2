@@ -5,6 +5,14 @@ const Product = {
   list: async() => {
     return await db.Products.findAll();
   },
+  findByCategory: async (value)=>{
+    productCategories = await db.Products.findAll({
+      where: {
+        product_category_id: value
+      }
+    });
+    return productCategories.length
+},
   findByPk: async (id) => {
     return await db.Products.findByPk(id);
   },

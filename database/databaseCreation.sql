@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `products`
 --
 
-CREATE TABLE `products` (
+CREATE TABLE `product` (
   `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `description` text NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE `products` (
 -- Volcado de datos para la tabla `products`
 --
 
-INSERT INTO `products` (`id`, `name`, `description`, `price`, `product_category_id`, `image`) VALUES
+INSERT INTO `product` (`id`, `name`, `description`, `price`, `product_category_id`, `image`) VALUES
 (1, 'Café Colombia', 'Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical,  cuerpo y acidez media.', '700.00', 1, 'images/colombia.png'),
 (2, 'Café Nicaragua', 'Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical,  cuerpo y acidez media.', '70.00', 1, 'images/nicaragua.png'),
 (3, 'Café Kenya', 'Su sabor es potente y permanente en boca. Café intenso. Tonos de fruta tropical,  cuerpo y acidez media.', '702.00', 1, 'images/kenya.png'),
@@ -67,7 +67,7 @@ INSERT INTO `products` (`id`, `name`, `description`, `price`, `product_category_
 -- Estructura de tabla para la tabla `product_categories`
 --
 
-CREATE TABLE `product_categories` (
+CREATE TABLE `product_category` (
   `id` int(11) NOT NULL,
   `product_category` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -76,7 +76,7 @@ CREATE TABLE `product_categories` (
 -- Volcado de datos para la tabla `product_categories`
 --
 
-INSERT INTO `product_categories` (`id`, `product_category`) VALUES
+INSERT INTO `product_category` (`id`, `product_category`) VALUES
 (1, 'Café'),
 (2, 'Accesorios'),
 (3, 'Cafetera'),
@@ -88,7 +88,7 @@ INSERT INTO `product_categories` (`id`, `product_category`) VALUES
 -- Estructura de tabla para la tabla `users`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `name` varchar(20) NOT NULL,
   `email` varchar(20) NOT NULL,
@@ -100,7 +100,7 @@ CREATE TABLE `users` (
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `user_category_id`) VALUES
+INSERT INTO `user` (`id`, `name`, `email`, `password`, `user_category_id`) VALUES
 (1, 'rodrigo', 'asd@asd.com', '$2a$10$NLIPWpoOrpj7Zu2CJPLGx.dXka4q4pxgKlMjGHVDaL4EkVS40NUYO', '2'),
 (2, 'rodri', 'qwe@qwe.com', '$2a$10$8dx2aY0RgheGir7Xx5Q.o.zXTfPkSX39u.pBKqi7v8mwq.CFJ9RRS', '2'),
 (3, 'rodrigo', 'momom@sad.com', '$2a$10$pH9nLsPYO77tDcai0JQjiuL0AHvS/Gig0RgmoE6GlJZLVHwY7PD.O', '2');
@@ -111,7 +111,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `user_category_id`) VALU
 -- Estructura de tabla para la tabla `user_categories`
 --
 
-CREATE TABLE `user_categories` (
+CREATE TABLE `user_category` (
   `id` int(11) NOT NULL,
   `user_category` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -120,7 +120,7 @@ CREATE TABLE `user_categories` (
 -- Volcado de datos para la tabla `user_categories`
 --
 
-INSERT INTO `user_categories` (`id`, `user_category`) VALUES
+INSERT INTO `user_category` (`id`, `user_category`) VALUES
 (1, 'admin'),
 (2, 'user');
 

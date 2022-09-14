@@ -3,39 +3,50 @@ let db = require("../../database/models");
 
 const Product = {
   list: async() => {
-    return await db.Products.findAll();
+    return await db.Product.findAll({
+      include: [{association:'category'}]
+    });
+  },
+  listCategory: async () => {
+    return await db.product_category.findAll()
   },
   findByCategory: async (value)=>{
-    productCategories = await db.Products.findAll({
+    productCategories = await db.Product.findAll({
+      include: [{association:'category'}],
       where: {
         product_category_id: value
       }
     });
     return productCategories.length
-},
+  },
   findByPk: async (id) => {
-    return await db.Products.findByPk(id);
+    return await db.Product.findByPk(id,{
+      include: [{association:'category'}]
+    });
   },
   create: async (req) =>{
     const image = req.file ? 'images/' + req.file.filename : 'images/foto-vacia'
-    await db.Products.create({
-      name : req.body.name,
-      product_category_id: req.body.category,
+    await db.Product.create({
+      name: req.body.name,
       description: req.body.description,
       price: req.body.price,
-      image: image
+      product_category_id: req.body.categorias,
+      image: image,
+      include: [{association:'category'}]
     });
   },
   update: async (id, req) => {
-    await db.Products.update(
-      {name: req.body.name,
+    await db.Product.update({
+      name: req.body.name,
       description: req.body.description,
-      price: req.body.price},
-      {where: { id: req.params.id }
+      price: req.body.price
+    },{
+      where: { id: req.params.id },
+      include: [{association:'category'}]
     });
   },
     delete: async (id) => {
-      await db.Products.destroy({
+      await db.Product.destroy({
         where: { id: id }
       });
       return true;

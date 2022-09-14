@@ -13,12 +13,15 @@ const productController = {
     const producto = await Product.findByPk(req.params.id);
      return res.render('products/products', { producto });
   },
-  productsCreate: (req, res) => {
-    return res.render('products/create');
+  productsCreate: async (req, res) => {
+    const categorias = await Product.listCategory();
+    // return res.send(categorias[1].product_category);
+    return res.render('products/create',{ categorias });
   },
   productsEdit: async(req, res) => {
     const producto = await Product.findByPk(req.params.id)
-    return res.render('products/edit', { producto: producto });
+    const categorias = await Product.listCategory()
+    return res.render('products/edit', { producto: producto, categorias });
   },
   productsNew: async (req, res) => {
     if (validationResult(req).isEmpty()){

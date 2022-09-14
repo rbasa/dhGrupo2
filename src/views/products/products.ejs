@@ -4,6 +4,7 @@
         <main>
             <div class="product">
             <div class="product_title_edit"><%= producto.name %></div>
+            <div class="product_description_edit"><%= producto.category.product_category %></div>
 
             <div class="prod-sub">
                 <%= producto.description %>
@@ -19,8 +20,6 @@
             </div>
             <div class="pagar"><input type="submit" value="Agregar al carro"></div>
             <a href="/products/<%= producto.id %>/edit"><button  class="boton-editar">Editar</button></a>
-
-
         </main>
         <%-include("../partials/footer")%>
     </body>

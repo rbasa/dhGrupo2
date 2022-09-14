@@ -16,11 +16,17 @@
                 <div ><%= errors.name.msg %> </div>
             <% } %>
           </div>
-          <div class="txt_field">
-            <input id="categoria_producto" name="category" type="text" value="<%= locals.old && old.category ? old.category : '' %>">
+          <div class="">
             <div class="dinamic-category-feedback"></div>
             <span></span>
-            <label>Clase</label>
+            <!-- <label>Categoria</label> -->
+            <select name="categorias" id="categoria_producto">
+              <% for(i = 0; i < categorias.length; i++) {%>
+                <option value="<%= categorias[i].id %>">
+                  <%= categorias[i].product_category %>
+                </option>
+                <% } %> 
+              </select>
             <% if (locals.errors && errors.category) { %>
                 <div ><%= errors.category.msg %> </div>
             <% } %>

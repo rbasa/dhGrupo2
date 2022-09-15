@@ -3,13 +3,8 @@ const fs = require('fs');
 const User = require('../models/User');
 const { validationResult } = require('express-validator');
 const bcryptjs = require('bcryptjs')
-const dbUsers = path.join(__dirname, '../database/users.json');
 
-const readJsonFile = (path) => {
-    const data = fs.readFileSync(path, 'utf-8');
-    const dataParse = JSON.parse(data);
-    return dataParse;
-};
+
 
 const controller = {
     register: (req, res) => {
@@ -24,7 +19,7 @@ const controller = {
               old : req.body
           })
         }
-        userInDB = User.findByField('email', req.body.email);
+        userInDB = User.findByEmail(req.body.email);
         if (userInDB) {
             return res.render('users/register', {
                 errors: {
@@ -39,18 +34,16 @@ const controller = {
         const newUser = {
           ...req.body,
           password: bcryptjs.hashSync(req.body.password, 10),
-          passwordConfirmation: true,
           category: "user"
         }
         User.create(newUser)
         return res.redirect('/users/login');
-        
     },
     login: (req, res) => {
         return res.render('users/login');
     },
     loginProcess: (req, res) => {
-      let userToLogin = User.findByField('email', req.body.email);
+      let userToLogin = User.findByEmail(req.body.email);
       if (!userToLogin) {
           return res.render('users/login', {
               errors: {

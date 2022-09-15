@@ -3,6 +3,7 @@ const fs = require('fs');
 const { validationResult } = require('express-validator');
 const Product = require('../models/Products')
 let db = require("../../database/models")
+const User = require("../models/Users")
 
 const apiController = {
   products: async (req, res) => {
@@ -20,6 +21,14 @@ const apiController = {
   product: async (req, res) => {
     const producto = await Product.findByPk(req.params.id);
     return res.json( producto );
+  },
+  list: async (req,res) => {
+    const users = await User.list();
+    return res.send(users)
+  },
+  userDetail: async(req,res) => {
+  const selectedUser = await User.findByPk(req.params.id);
+  return res.send(selectedUser);
   }
 };
 

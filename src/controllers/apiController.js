@@ -15,7 +15,7 @@ const apiController = {
         cafeteras: await Product.findByCategory(3),
         buzos: await Product.findByCategory(4)
       },
-      procuctos: await Product.list()
+      productos: await Product.list()
     });
   },
   product: async (req, res) => {
@@ -23,12 +23,17 @@ const apiController = {
     return res.json( producto );
   },
   list: async (req,res) => {
-    const users = await User.list();
-    return res.send(users)
+    const usersList = await User.list()
+
+    const usersResponse = {
+      count: usersList.length,
+      users: usersList
+    }
+    return res.send(usersResponse)
   },
   userDetail: async(req,res) => {
-  const selectedUser = await User.findByPk(req.params.id);
-  return res.send(selectedUser);
+    const selectedUser = await User.findByPk(req.params.id);
+    return res.send(selectedUser);
   }
 };
 

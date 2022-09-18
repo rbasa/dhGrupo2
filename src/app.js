@@ -10,6 +10,8 @@ const methodOverride = require('method-override');
 const session = require('express-session');
 const userLogged = require('./middlewares/userLogged');
 const cookies = require('cookie-parser');
+const cors = require('cors');
+app.use(cors())
 
 app.use(session({
     secret: 'es un secreo',

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import TarjetaProductos from './TarjetaProducto'
 
 function Productos(){
   let [productos, setProductos] = useState([])
@@ -14,14 +15,13 @@ function Productos(){
 
   return(
     <>
-      <p>
-        Estos son los productos listados
-      </p>
-      <ul>
+      <div class="row">
+
         { productos.map( e => {
-          return(<li>{e.name}</li>)
+          return( <TarjetaProductos name = {e.name} description = {e.description}/>)
+          // return(<li>{e.name}</li>)
         } )}
-      </ul>
+      </div>
     </>
   );
   

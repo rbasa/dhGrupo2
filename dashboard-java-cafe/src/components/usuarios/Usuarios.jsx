@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import TarjetaUsuarios from './TarjetaUsuarios'
 function Usuarios(){
   let [usuarios, setUsuarios] = useState([])
  
@@ -14,14 +14,13 @@ function Usuarios(){
 
   return(
     <>
-      <p>
-        Estos son los usuarios registrados
-      </p>
-      <ul>
+      <div className="container">
+        <div className="row gx-4 gx-lg-5">
         { usuarios.map( e => {
-          return(<li>{e.name}</li>)
+          return(<TarjetaUsuarios usuario={e.name} mail={e.email}/>)
         } )}
-      </ul>
+        </div>
+      </div>
     </>
   );
   

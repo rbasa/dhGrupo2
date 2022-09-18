@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import TarjetaCategoria from './TarjetaCategoria'
 function Categorias(){
   let [categorias, setCategorias] = useState({})
  
@@ -14,18 +14,15 @@ function Categorias(){
 
   return(
     <>
-      <p>
-        Estos son los categorias listados
-      </p>
-        {Object.keys(categorias).map((key, index) => {
-          return (
-            <div key={index}>
-              <div>
-                {`Cantidad de ${key}:`} {categorias[key]}
-              </div>
-            </div>
-          );
-        })}
+    <div className="container">
+        <div className="row gx-4 gx-lg-5">
+          {Object.keys(categorias).map((key, index) => {
+            return (
+              <TarjetaCategoria categoria={key} cantidad={categorias[key]}/>
+            );
+          })}
+        </div>
+      </div>
     </>
   );
   

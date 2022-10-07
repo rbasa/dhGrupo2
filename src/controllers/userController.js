@@ -18,7 +18,7 @@ const controller = {
         })
       }
       userInDB = await Users.findByEmail(req.body.email);
-      if (userInDB.length) {
+      if (userInDB) {
         return res.render('users/register', {
           errors: {
             email: {

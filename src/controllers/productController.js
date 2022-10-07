@@ -1,8 +1,5 @@
-const path = require('path');
-const fs = require('fs');
 const { validationResult } = require('express-validator');
 const Product = require('../models/Products')
-let db = require("../../database/models")
 
 const productController = {
   list: async (req, res) => {

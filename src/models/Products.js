@@ -36,10 +36,12 @@ const Product = {
     });
   },
   update: async (id, req) => {
+    const image = req.file ? 'images/' + req.file.filename : 'images/foto-vacia'
     await db.Product.update({
       name: req.body.name,
       description: req.body.description,
-      price: req.body.price
+      price: req.body.price,
+      image: image
     },{
       where: { id: req.params.id },
       include: [{association:'category'}]

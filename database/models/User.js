@@ -3,7 +3,7 @@ module.exports = (sequelize, dataTypes) => {
     id: {
       type: dataTypes.INTEGER,
       primaryKey: true,
-      autoincrement: true,
+      autoIncrement: true,
       allowNull: false
     },
     name:{
@@ -27,6 +27,5 @@ module.exports = (sequelize, dataTypes) => {
     tableName: "user",
     timestamps: false
   });
-
   return User
 }

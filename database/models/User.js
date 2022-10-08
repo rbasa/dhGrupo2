@@ -21,6 +21,10 @@ module.exports = (sequelize, dataTypes) => {
     user_category_id:{
       type: dataTypes.INTEGER,
       allowNull: false
+    },
+    image:{
+      type: dataTypes.STRING,
+      allowNull: false
     }
   },
   {

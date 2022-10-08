@@ -1,4 +1,3 @@
-const fs = require('fs');
 let db = require("../../database/models");
 
 const User = {
@@ -17,7 +16,8 @@ const User = {
     name: userData.name,
     email: userData.email,
     password: userData.password,
-    user_category_id: userData.category
+    user_category_id: userData.category,
+    image: userData.imagen
     });
   }
 }

@@ -28,12 +28,13 @@ const controller = {
           old : req.body
         })
       }
+      const imagen = req.file ? 'images/users/' + req.file.filename : 'images/users/usuario-sin-foto.png'
       const newUser = {
         ...req.body,
         password: bcryptjs.hashSync(req.body.password, 10),
-        category: 2
+        category: 2,
+        imagen: imagen
       }
-      // return res.json(newUser)
       Users.create(newUser)
       return res.redirect('/users/login');
     },
@@ -75,7 +76,7 @@ const controller = {
 	},
   logout: (req, res) => {
     res.clearCookie('userEmail');
-    req.session.destroy;
+    req.session.destroy();
     res.redirect('/')
   }
 };

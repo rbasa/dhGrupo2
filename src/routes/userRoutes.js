@@ -10,8 +10,7 @@ router.get('/login', guestMiddleware, userController.login);
 router.post('/login', userController.loginProcess);
 router.get('/register', guestMiddleware, userController.register);
 router.post('/register', upload.single("imagenUsuario"), registerValidations, userController.processRegister);
-router.get('/profile', userMiddleware,userController.profile);
+router.get('/profile', userMiddleware, userController.profile);
 router.get('/logout', userController.logout);
-
 
 module.exports = router

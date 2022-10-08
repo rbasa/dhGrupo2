@@ -727,7 +727,12 @@ font-variation-settings:
 }
 
 .profile{
-margin:10%
+padding: 20px;
+width: 20%;
+margin:2%;
+border : 1px solid black;
+border-radius: 10px;
+justify-content: center;
 }
 .bienvenido{
 font-family: 'Poppins', sans-serif ;
@@ -1021,7 +1026,17 @@ margin-bottom: 1rem;
   main section div.form-container form div input.login-submit{
     max-width: 200px;
   }
-
+ .userProfile{
+display: flex;
+ }
+ .pro{
+margin: 2em;
+ }
+ .logout{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:2em
+ }
+ 
   .cart{
   margin-top: 1rem;
   }

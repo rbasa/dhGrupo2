@@ -16,7 +16,7 @@ const productController = {
   productsCreate: async (req, res) => {
     const categorias = await Product.listCategory();
     // return res.send(categorias[1].product_category);
-    return res.render('products/create',{ categorias });
+    return res.render('products/create', { categorias });
   },
   productsEdit: async(req, res) => {
     const producto = await Product.findByPk(req.params.id)

@@ -1,8 +1,8 @@
 const path = require('path');
 const fs = require('fs');
 const { validationResult } = require('express-validator');
-const Product = require('../models/Products')
 let db = require("../../database/models")
+const Product = require('../models/Products')
 const User = require("../models/Users")
 
 const apiController = {

@@ -3,7 +3,6 @@ import React from "react";
 function TarjetaUsuarios(props){
   return(
     <>
-      { console.log() }
       <div className="col-md-4 mb-5">
         <div className="card h-100">
           <div className="card-body">

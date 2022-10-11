@@ -18,22 +18,24 @@ function App() {
   return (
     <>
       <Header/>
-      <div class="row">
-       <div class="col-2">
-        <Sidebar/>
-       </div>
-       <div class="col-10">
-        <div class="row">
-          <TotalUsuarios/>
-          <TotalProductos/>
-          <TotalCategorias/>
-          <UltimoUsuario/>
+      <div className="">
+        <div className="row">
+        <div className="col-2">
+          <Sidebar/>
         </div>
-        <Categorias/>
-        <Productos/>
+        <div className="col-10">
+          <div className="row totales">
+            <TotalUsuarios/>
+            <TotalProductos/>
+            <TotalCategorias/>
+            <UltimoUsuario/>
+          </div>
+          <Categorias/>
+          <Productos/>
+          <Usuarios/>
+          </div>
         </div>
       </div>
-      <Usuarios/>
     </>
   );
 }
